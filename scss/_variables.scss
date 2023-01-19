@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap');
 
 $chakra: 'Chakra Petch', sans-serif;
 $nothing: 'Nothing You Could Do', cursive; 
@@ -13,6 +14,7 @@ $chilanka: 'Chilanka', cursive;
 $caveat: 'Caveat', cursive;
 $alef: 'Alef', sans-serif;
 $dokdo: 'East Sea Dokdo', cursive;
+$urbanist: 'Urbanist', sans-serif;
 
 $darkCyan: #00221C;
 
@@ -26,6 +28,7 @@ $darkCyan: #00221C;
 @mixin noStyle {
     text-decoration: none;
     list-style: none;
+    color: black;
     &:visited {
         text-decoration: none;
     }
@@ -41,6 +44,6 @@ $darkCyan: #00221C;
 
 @mixin dropshadow {
     img {
-        filter: drop-shadow(4px 4px 2px rgba(13, 43, 37, 0.5));
+        filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
     }
 }

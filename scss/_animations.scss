@@ -37,3 +37,32 @@
     }
 } 
 
+//second section : sliding texts
+/*
+#clear {
+    color: rgb(0, 184, 156);
+    transition-delay: 1s; 
+    transition: 1s ease in;
+    animation: txtFlyIn 2s linear;
+}
+#color {
+    color: rgb(0, 135, 115);
+    transition-delay: 3s; 
+    transition: 1.2s ease in;
+    animation: txtFlyIn 3s linear;      
+}
+#responsive {
+    color: rgb(0, 59, 50);
+    transition-delay: 5s; 
+    transition: 1.4s ease in;
+    animation: txtFlyIn 4s linear;      
+}
+@keyframes txtFlyIn {
+    0% { 
+        transform: translateX(-150%); 
+    }
+    100% { 
+        transform: translateX(0%); 
+    }
+}
+*/

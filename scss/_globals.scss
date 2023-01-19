@@ -4,21 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
-main {
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 .section {
     height: 100vh;
     width: 100vw;
-}
-
-.first, .second, .third {
     scroll-snap-align: center; 
 }
 

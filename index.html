@@ -8,10 +8,25 @@
     <title>Hayeong Pyeon</title>
 
     <link rel="stylesheet" type="text/css" href="/scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="menu">
+            <ul class="flex-dir-row j-c-center noStyle">
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+            </ul>
+
+        </nav>
+        <nav id="links">
             <ul class="noStyle">
                 <li>
                     <a href="https://github.com/hypyeon" target="_blank">
@@ -20,46 +35,58 @@
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/hayeongp828663811/" target="_blank">
-                        <img src="/images/icons8-linkedin-64.png" alt="linkedin">
+                        <img src="/images/icons8-linkedin-2-50.png" alt="linkedin">
                     </a>
                 </li>
                 <li>
                     <a href="mailto:hayeong.pyeon@gmail.com" target="_blank">
-                        <img src="/images/icons8-mail-50 (2).png" alt="email">
+                        <img src="/images/icons8-secured-letter-email-50.png" alt="email">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="section first">
+        <div class="section first" id="home">
             <div id="x">
                 <div id="y"></div>
             </div>
             <div id="intro">
-                <h1>Welcome to my <br>
-                    humble abode.
-                </h1>
+                <h1>Welcome to <br>
+                my humble abode.</h1>
                 <p>
                     Hi. My name is HaYeong. <br>
                     I build websites <span>from scratch</span>.
                 </p>
             </div>
-            <div id="scrolldown"></div>   
         </div>
-        <div class="section second flex-dir-col a-c-center center">
-            <div id="second-1">
-                <p id="specialty">
-                    My specialties are CSS Grid, Bootstrap, Navigation, Responsive, and color design.
-                </p>
-                <p id="strengths">
-                I build websites that are
-                <span>desktop</span> and <span>mobile-friendly</span>, 
-                <br> have <span>clear layouts</span>
-                and <span>accessible color palette</span>. 
-                </p>
+        <div class="section second flex-dir-row j-c-center" id="portfolio">
+            <div class="flex-dir-col j-c-center" id="second-1">
+                <div id="specialty">
+                    <div 
+                    data-aos="fade-right"
+                    data-aos-delay="900"
+                    data-aos-duration="1500"
+                    data-aos-once="true">
+                        <p id="clear">Clear layouts.</p>
+                    </div>
+                    <div 
+                    data-aos="fade-right"
+                    data-aos-delay="1800"
+                    data-aos-duration="1500"
+                    data-aos-once="true">
+                        <p id="color">Accessible color palette.</p>
+                    </div>
+                    <div 
+                    data-aos="fade-right"
+                    data-aos-delay="2700"
+                    data-aos-duration="1500"
+                    data-aos-once="true">
+                        <p id="responsive">Desktop and mobile friendly.</p>
+                    </div>
+                </div>
             </div>
-            <div class="grid j-c-center" id="second-2">
+            <div class="flex-dir-col j-c-center" id="second-2">
                 <a href="https://hypyeon.github.io/portfolio-tipcalculator/" target="_blank">
                     <div class="website tip">
                         <div class="overlay">
@@ -91,7 +118,7 @@
             </div>
         </div>
 
-        <div class="section third flex-dir-col center">
+        <div class="section third flex-dir-col center" id="about">
             <div id="gradientBg"></div>
             <div id="pic">
                 <img src="./images/IMG_8836.JPG" alt="Profile Photo" id="profilepic">
@@ -106,8 +133,9 @@
                     </div>
                     <div class="t-a-center" id="content">
                         <p id="content-1">If you need a website for your small business <br>
-                            (a restaurant, a cafe, a studio, or a bar), <br>
-                            already have a website but would like to do a touch-up on design, layout and/or contents, <br>
+                            (a restaurant, a cafe, a studio, or a bar, you name it!), <br>
+                            already have a website but would like to do a touch-up <br>
+                            on design, layout and/or contents, <br>
                             or need a webmaster who regularly updates <br>
                             and manages your website, 
                         </p>
@@ -129,11 +157,11 @@
                 </p>
                 <div class="grid">
                     <div class="facts">
-                        <p>English is my second language. I am a native Korean speaker who can also communicate in Mandarin Chinese.</p>
+                        <p>English is my second language. I'm a native Korean speaker who can also communicate in Mandarin Chinese.</p>
                     </div>
                     <div class="facts">
                         <p>I DJ for fun! <br>
-                            My favorite music genres are dance, trap, <br>
+                            My favorite music genres are dance, trap, hip-hop <br>
                             and future house.</p>
                     </div>
                     <div class="facts">
@@ -143,8 +171,8 @@
                         </p>
                     </div>
                     <div class="facts">
-                        <p>I have an Australian Cattle Dog mixed with German Shepherd, "Halu". <br>
-                            He was a 2-month old rescue from Texas!</p>
+                        <p>I have a Blue Heeler mixed with German Shepherd. <br>
+                            He sleeps like a human and loves PB and chicken.</p>
                     </div>
                 </div>
             </div>
@@ -152,6 +180,9 @@
 
     </main>
     <footer></footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
