@@ -356,20 +356,20 @@ main .second #second-2 .website:hover .overlay {
 }
 
 main .second #second-2 .tip {
-  background-image: url(/images/splitter.png);
+  background-image: url(../images/splitter.png);
   margin-top: 4rem;
 }
 
 main .second #second-2 .news {
-  background-image: url(/images/newshome.png);
+  background-image: url(../images/newshome.png);
 }
 
 main .second #second-2 .preview {
-  background-image: url(/images/previewcard.png);
+  background-image: url(../images/previewcard.png);
 }
 
 main .second #second-2 .landing {
-  background-image: url(/images/sunnyside.png);
+  background-image: url(../images/sunnyside.png);
 }
 
 main .third {
