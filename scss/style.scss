@@ -1,0 +1,295 @@
+@import './variables';
+@import './animations';
+@import './globals';
+
+header {
+    nav {
+        position: fixed;
+        left: calc(100vw - 100px);
+        top: calc((100vh - 192px)/2);
+        width: fit-content;
+        z-index: 1;
+    
+        img {
+            width: 72px;
+            margin: 4px;
+
+            filter: drop-shadow(5px 5px 1px black);
+        }
+    }
+}
+main {
+    .first {
+        height: 100vh;
+        background-color: #FFFFE7;
+
+        #x {
+            #y {
+                padding: 240px;
+                width: fit-content;
+                background-color: #FFFD95;
+                border-radius: 50%;
+                position: fixed;
+            }
+        }
+
+        #intro {
+            position: absolute;
+            left: 0;
+
+            font-family: $chakra;
+            line-height: 1.1;
+
+            h1 {
+                font-size: 5rem;
+                font-weight: 400;
+                color: #10E689;
+                padding: 16vh 0;
+            }
+            p {
+                color: #F56CAD;
+                font-size: 1.5rem;
+                line-height: 1.75;
+                span {
+                    font-family: $dokdo;
+                    font-size: 2.25rem;
+                    line-height: 0.75;
+                }
+            }
+        }
+        #scrolldown {
+            border: solid rgb(255, 255, 233);
+            border-width: 0 0.5px 0.5px 0;
+            display: inline-block;
+            padding: 32px;
+
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+
+            filter: drop-shadow(6px 6px 1px rgb(0, 0, 0));
+
+            position: absolute;
+            left: calc((100vw - 64px) / 2);
+            bottom: 12vh;
+        }
+
+    }
+    .second {
+        height: 100vh;
+        background-color: $darkCyan;
+
+        #second-1 {
+            padding-top: 60px;
+            p {
+                font-family: $chakra;
+            }
+            #specialty {
+                font-size: 1.25rem;
+                color: #b09eaa;
+                padding-bottom: 20px;
+            }
+            #strengths {
+                font-size: 1.75rem;
+                color: white;
+                padding-bottom: 20px;
+
+                span {
+                    color: #ffd0ee;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        #second-2 {
+            padding: 60px 0;
+            grid-template-columns: repeat(2, 360px);            
+            gap: 20px;
+    
+            .website {
+                @include portBg;
+                transition-delay: 1s;
+    
+                .overlay {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    border: 1px white solid;
+                    p {
+                        padding: 68px 0;
+
+                        text-decoration: none;
+                        font-family: $chakra;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 1.15rem;
+                        letter-spacing: 2.75px;
+                    }
+                }
+            }
+    
+            .website:hover {
+                cursor: pointer;
+                .overlay {
+                    opacity: 0;
+                }
+            }
+            
+            .tip {
+                background-image: url(/images/splitter.png);
+                &, .overlay {
+                    border-radius: 45px 0 0 0;
+
+                }
+            }
+            .news {
+                background-image: url(/images/newshome.png);
+                &, .overlay {
+                    border-radius: 0 45px 0 0;
+                }
+            }
+            .preview {
+                background-image: url(/images/previewcard.png);
+                &, .overlay {
+                    border-radius: 0 0 0 45px;
+                }
+            }
+            .landing {
+                background-image: url(/images/sunnyside.png);
+                &, .overlay {
+                    border-radius: 0 0 45px 0;
+                }
+            }
+            
+        }
+    
+    }
+
+    .third {
+        position: relative;
+        font-family: $chakra;
+
+        #gradientBg {
+            @include gradientBg;
+        }
+        #pic {
+            position: absolute;
+            left: 0;
+            bottom: 40vh;
+
+            padding: 32px 32px 32px 80px;
+            background-color: white;
+            border-radius: 0 47.5% 47.5% 0;
+            
+            #profilepic {
+                width: 180px;
+                border-radius: 50%;
+            }
+        }
+        #third-1 {
+            p {
+                color: $darkCyan;
+                padding: 2.5rem 0;
+                font-size: 1.75rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                span {
+                    font-size: 2.25rem;
+                    font-family: $caveat;
+                    font-weight: 500;
+                    @include fontGrad;
+                }
+            }
+        }
+        #third-2 {
+            padding: 2.5rem 0;
+
+            #quote {
+                margin: 0 120px 0 300px;
+
+                .resize {
+                    img {
+                        width: 58px;
+                    }
+                }
+                #openingquote {
+                    padding-top: 10px;
+                    padding-left: 80px;
+                    @include dropshadow;
+                }
+                #closingquote {
+                    padding-right: 80px;
+                    padding-bottom: 10px;
+                    align-self: flex-end;
+                    @include dropshadow;
+                }
+                #content {
+                    align-self: center;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    padding: 2rem 3rem;
+                    border-radius: 45px;
+                    margin: 0 40px;
+                    font-family: $alef;
+
+                    #content-1 {
+                        font-size: 1.15rem;
+                        line-height: 1.35;
+                        letter-spacing: 0.15px;
+                    }
+                    #content-2 {
+                        font-weight: 700;
+                        font-size: 2.15rem;
+                        margin-top: 18px;
+                        line-height: 1.25;
+                        letter-spacing: 0.75px;
+                        @include fontGrad;
+                    }
+                    #content-3 {
+                        font-size: 0.85rem;
+                        letter-spacing: 0.25px;
+                        color: rgb(125, 125, 125);
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        #third-3 {
+            padding: 18px 0;
+
+            #funfacts {
+                text-align: center;
+                padding-bottom: 16px;
+                font-family: 'Chelsea Market', cursive;
+                font-size: 1.15rem;
+                span {
+                    font-family: $chakra;
+                    font-size: 1.05rem;
+                }
+            }
+            .grid {
+                grid-template-columns: repeat(4, 1fr);
+                margin: 0 160px;
+                gap: 30px;
+
+                .facts {
+                    border: 3px white solid;
+                    border-radius: 12px;
+                    min-height: 160px;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        width: 100%;
+                        padding: 0 20px;
+                        
+                        font-family: $alef;
+                        font-size: 1rem;
+                        text-align: center;
+                        color: $darkCyan;
+                        letter-spacing: 0.25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
