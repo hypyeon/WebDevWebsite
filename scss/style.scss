@@ -48,13 +48,13 @@ header {
 main {
     .first {
         height: 100vh;
-        background-color: #FFFFE7;
+        background-color: $backgroundColor;
 
         #x {
             #y {
                 padding: 240px;
                 width: fit-content;
-                background-color: #FFFD95;
+                background-color: $ballColor;
                 border-radius: 50%;
                 position: fixed;
             }
@@ -70,20 +70,27 @@ main {
                 line-height: 1.1;
                 font-size: 6rem;
                 font-weight: 400;
-                color: #10E689;
+                color: $bigIntroColor;
 
                 padding-bottom: 10rem;
             }
-
-            p {
-                color: #F56CAD;
-                font-size: 1.75rem;
-                line-height: 1.75;
-                span {
-                    font-family: $dokdo;
-                    font-size: 2.5rem;
-                    line-height: 0.75;
+            .flex-dir-row {
+                align-items: baseline;
+                
+                p {
+                    color: $smallIntroColor;
+                    font-size: 1.75rem;
+                    line-height: 1.75;
+                    span {
+                        font-family: $dokdo;
+                        font-size: 2.5rem;
+                        line-height: 0.75;
+                    }
                 }
+                #palette {
+                    padding: 1.5rem 4rem;
+                }
+    
             }
         }
     }

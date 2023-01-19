@@ -19,6 +19,21 @@ html {
     scroll-snap-align: center; 
 }
 
+.first {
+    @at-root {
+        $backgroundColor: #ffffe9;
+        $ballColor: #FFFD95;
+        $bigIntroColor: #10E689;
+        $smallIntroColor: #F56CAD;
+    }
+    .colorPalette-2 {
+        $backgroundColor: #2D1394;
+        $ballColor: #7654FF;
+        $bigIntroColor: #E0CE34;
+        $smallIntroColor: #B528E0;
+    }
+}
+
 .flex-dir-row {
     display: flex;
     flex-direction: row;
