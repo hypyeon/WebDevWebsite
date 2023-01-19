@@ -410,7 +410,7 @@ main .third #third-1 {
 
 main .third #third-1 p {
   color: #00221C;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   font-size: 1.75rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -425,6 +425,10 @@ main .third #third-1 p span {
   color: transparent;
   padding: 0 0.25rem;
   font-family: "Caveat", cursive;
+}
+
+main .third #third-2 {
+  padding: 0.5rem 0;
 }
 
 main .third #third-2 #quote {
@@ -512,11 +516,11 @@ main .third #third-3 .grid {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   margin: 0 10rem 4rem;
-  gap: 30px;
+  gap: 1.5rem;
 }
 
 main .third #third-3 .grid .facts {
-  min-height: 160px;
+  min-height: 8.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
