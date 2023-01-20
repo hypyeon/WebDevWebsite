@@ -798,5 +798,190 @@ main {
             }
         }
     }
+}
+@media only screen and (max-width: 380px) {
 
+    body {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        overflow-x: hidden;
+    }
+    
+    header {
+        #menu {
+            ul {
+                li {
+                    padding: 1rem 1.15rem;
+                    a {
+                        font-size: 0.75rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        #links {
+            left: calc((100vw - 140px) / 2);
+            top: calc(100vh - 3.75rem);
+            ul {
+                li {
+                    display: inline-block;
+                    img {
+                        width: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .first {
+            #x {
+                #y {
+                    animation: y 5s linear infinite alternate;
+
+                    padding: 120px;
+                }
+            }
+            @keyframes x {
+                100% {
+                  transform: translateX( calc(100vw - 240px) );
+                }
+            }
+            @keyframes y {
+                100% {
+                  transform: translateY( calc(100vh - 240px) );
+                }
+            } 
+            #welcome {
+                position: absolute;
+                top: 10rem;
+                h1 {
+                    font-size: 2.25rem;
+                    padding-bottom: 5rem;
+                }
+                p {
+                    padding-top: 8rem;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    span {
+                        font-size: 1.85rem;
+                    }
+                }
+            }
+        }
+        .second {
+            #second-1 {
+                margin-left: 2.5rem;
+                margin-top: 2.5rem;
+                padding-right: 0;
+                #specialty {
+                    font-size: 1.5rem;
+                }
+            }
+            #second-2 {
+                margin: 3.25rem 3rem 0 2rem;
+                .website {
+                    margin: 0.5rem 0;
+                    .overlay {
+                        p {
+                            padding: 1.25rem 1.15rem;
+                            font-size: 0.75rem;
+                            line-height: 1;
+                        }
+                        .lineheight {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .third {
+            #pic {
+                bottom: 54vh;
+                #profilepic {
+                    width: 5rem;
+                }
+                padding: 0.5rem 0.5rem 0.5rem 1rem;
+            }
+            #third-1 {
+                margin-top: 1rem;
+                p {
+                    font-size: 0.85rem;
+                    padding: 0 2rem;
+                    text-align: center;
+                    span {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            #third-2 {
+                padding: 0;
+                margin: 2.25rem 0 1.5rem 0;
+                #quote {
+                    margin: 0 1rem 0 7rem;
+                    .resize {
+                        img {
+                            width: 1.5rem;
+                        }
+                    }
+                    #openingquote {
+                        padding-left: 3.5rem;
+                    }
+                    #closingquote {
+                        padding-right: 3.5rem;
+                    }
+                    #content {
+                        width: 50vw;
+                        padding: 0.5rem 0.5rem;
+                        #content-1 {
+                            display: none;
+                        }
+                        .phone {
+                            display: block;
+                            font-size: 0.75rem;
+                            br {
+                                display: none;
+                            }
+                        }
+                        #content-2 {
+                            margin-top: 0.15rem;
+                            font-size: 1.25rem;
+                            line-height: 1;
+                        }
+                        #content-3 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            #third-3 {
+                padding-top: 0;
+                #funfacts {
+                    padding-bottom: 1rem;
+                    font-size: 0.75rem;
+                    span {
+                        font-size: 0.7rem;
+                    }
+                }
+                .grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    margin: 0 4rem;
+                    gap: 1.25rem;
+                    .facts {
+                        min-height: 5rem;
+                        filter: drop-shadow(6px 6px 0 rgba(0, 54, 54, 0.4));
+
+                        p {
+                            font-size: 0.575rem;
+                            letter-spacing: -0.15px;
+                            padding: 1rem 0.5rem;
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
