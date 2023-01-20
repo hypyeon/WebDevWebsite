@@ -18,6 +18,28 @@ $urbanist: 'Urbanist', sans-serif;
 
 $darkCyan: #00221C;
 
+@mixin pltPrimary {
+    background-color: #ffffe9;
+    #y {
+        background-color: #FFFD95;
+    }
+    h1 {
+        color: #10E689;
+    }
+    p {
+        color: #F56CAD;
+    }
+}
+
+/*
+.colorPalette-2 {
+    $backgroundColor: #2D1394;
+    $ballColor: #7654FF;
+    $bigIntroColor: #E0CE34;
+    $smallIntroColor: #B528E0;
+}
+*/
+
 @mixin portBg {
     background-size: cover;
     background-repeat: no-repeat;

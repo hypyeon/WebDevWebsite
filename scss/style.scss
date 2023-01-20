@@ -8,13 +8,13 @@ header {
         position: fixed;
 
         ul {
-            background-color: rgba(0, 47, 40, 0.45);
+            background-color: rgba(209, 255, 248, 0.45);
             width: 100vw;
 
             li {
                 padding: 1rem 8rem;
                 a {
-                    color: #ffffff;
+                    color: #00715e;
                     font-family: $chakra;
                     font-size: 1.5rem;
                     letter-spacing: 2.5px;
@@ -48,19 +48,18 @@ header {
 main {
     .first {
         height: 100vh;
-        background-color: $backgroundColor;
+        @include pltPrimary;
 
         #x {
             #y {
                 padding: 240px;
                 width: fit-content;
-                background-color: $ballColor;
                 border-radius: 50%;
                 position: fixed;
             }
         }
 
-        #intro {            
+        #welcome {            
             font-family: $chakra;
             position: absolute;
             left: 8vw;
@@ -70,28 +69,18 @@ main {
                 line-height: 1.1;
                 font-size: 6rem;
                 font-weight: 400;
-                color: $bigIntroColor;
 
                 padding-bottom: 10rem;
             }
-            .flex-dir-row {
-                align-items: baseline;
-                
-                p {
-                    color: $smallIntroColor;
-                    font-size: 1.75rem;
-                    line-height: 1.75;
-                    span {
-                        font-family: $dokdo;
-                        font-size: 2.5rem;
-                        line-height: 0.75;
-                    }
+            p {
+                font-size: 1.75rem;
+                line-height: 1.75;
+                span {
+                    font-family: $dokdo;
+                    font-size: 2.5rem;
+                    line-height: 0.75;
                 }
-                #palette {
-                    padding: 1.5rem 4rem;
-                }
-    
-            }
+            }    
         }
     }
     .second {
