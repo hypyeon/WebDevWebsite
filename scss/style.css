@@ -314,7 +314,7 @@ main .first #welcome p span {
 
 main .second {
   height: 100vh;
-  background-color: #ffecf8;
+  background-color: #fff0f9;
 }
 
 main .second #second-1 {
@@ -337,11 +337,11 @@ main .second #second-1 #specialty #clear {
 }
 
 main .second #second-1 #specialty #color {
-  color: #008773;
+  color: #00917b;
 }
 
 main .second #second-1 #specialty #responsive {
-  color: #003b32;
+  color: #005649;
 }
 
 main .second #second-2 {
@@ -575,7 +575,7 @@ main .third #third-3 .grid .facts p {
   letter-spacing: 0.25px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   header #menu ul li {
     padding: 1rem 6rem;
   }
@@ -721,7 +721,7 @@ main .third #third-3 .grid .facts p {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
