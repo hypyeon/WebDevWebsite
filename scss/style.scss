@@ -233,6 +233,9 @@ main {
                         line-height: 1.4;
                         letter-spacing: 0.15px;
                     }
+                    .phone {
+                        display: none;
+                    }
                     #content-2 {
                         font-weight: 700;
                         font-size: 2.5rem;
@@ -291,4 +294,509 @@ main {
         }
     }
     
+}
+@media only screen and (min-width: 1000px) {
+    header {
+        #menu {
+            ul {
+                li {
+                    padding: 1rem 6rem;
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        #links {
+            top: calc(((100vh - 144px)/2) + 1rem);
+            left: calc(100vw - 4rem);
+
+            img {
+                width: 1.25rem;
+            }
+        }
+    }
+    main {
+        .first {
+            #x {
+                #y {
+                    padding: 180px;
+                }
+            }
+            @keyframes x {
+                100% {
+                  transform: translateX( calc(100vw - 360px) );
+                }
+            }
+            @keyframes y {
+                100% {
+                  transform: translateY( calc(100vh - 360px) );
+                }
+            } 
+            #welcome {
+                top: 10rem;
+                h1 {
+                    font-size: 3.75rem;
+                    padding-bottom: 5rem;
+                }
+                p {
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    span {
+                        font-size: 1.85rem;
+                    }
+                }
+            }
+        }
+        .second {
+            #second-1 {
+                margin: 3.25rem 0 0 6rem;
+                #specialty {
+                    font-size: 2.25rem;
+                }
+            }
+            #second-2 {
+                margin: 3.25rem 8rem 0 3rem;
+                .website {
+                    margin: 0.75rem 0;
+                    .overlay {
+                        p {
+                            padding: 1.5rem 1.5rem;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .third {
+            #pic {
+                bottom: 42vh;
+                #profilepic {
+                    width: 8rem;
+                }
+                padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+            }
+            #third-1 {
+                margin-top: 3rem;
+                p {
+                    font-size: 1.25rem;
+                    padding: 0;
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            #third-2 {
+                padding: 0;
+                margin: 2rem 0;
+                #quote {
+                    margin: 0 2rem 0 10rem;
+                    .resize {
+                        img {
+                            width: 2.5rem;
+                        }
+                    }
+                    #openingquote {
+                        padding-left: 3.5rem;
+                    }
+                    #closingquote {
+                        padding-right: 3.5rem;
+                    }
+                    #content {
+                        width: 52vw;
+                        padding: 1rem 3rem;
+                        #content-1 {
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            br {
+                                display: none;
+                            }
+                        }
+                        #content-2 {
+                            margin-top: 0.25rem;
+                            font-size: 1.65rem;
+                        }
+                        #content-3 {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+            #third-3 {
+                padding-top: 0;
+                #funfacts {
+                    padding-bottom: 0.75rem;
+                    font-size: 0.85rem;
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+                .grid {
+                    margin: 0 4.5rem;
+                    gap: 1.25rem;
+                    .facts {
+                        min-height: 7.5rem;
+                        p {
+                            font-size: 0.8rem;
+                            letter-spacing: 0.1px;
+                            padding: 0 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 760px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    header {
+        #menu {
+            ul {
+                li {
+                    padding: 1rem 3.75rem;
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        #links {
+            top: calc(((100vh - 144px)/2) + 1rem);
+            left: calc(100vw - 5rem);
+            img {
+                width: 1.5rem;
+            }
+        }
+    }
+    main {
+        .first {
+            #x {
+                animation: x 5s linear infinite alternate;
+                #y {
+                    padding: 180px;
+                }
+            }
+            @keyframes x {
+                100% {
+                  transform: translateX( calc(100vw - 360px) );
+                }
+            }
+            @keyframes y {
+                100% {
+                  transform: translateY( calc(100vh - 360px) );
+                }
+            } 
+            #welcome {
+                top: 10rem;
+                h1 {
+                    font-size: 3.75rem;
+                    padding-bottom: 5rem;
+                }
+                p {
+                    padding-top: 26rem;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    span {
+                        font-size: 1.85rem;
+                    }
+                }
+            }
+        }
+        .second {
+            #second-1 {
+                margin: 3.25rem 0 0 6rem;
+                padding-right: 0;
+                #specialty {
+                    font-size: 2.25rem;
+                }
+            }
+            #second-2 {
+                margin: 3.25rem 10rem 0 3rem;
+                .website {
+                    margin: 0.75rem 0;
+
+                    .overlay {
+                        p {
+                            padding: 1.5rem 1.5rem;
+                            font-size: 0.85rem;
+                            line-height: 1.25;
+                        }
+                        .lineheight {
+                            
+                            line-height: 1.875;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .third {
+            #pic {
+                bottom: 44vh;
+                #profilepic {
+                    width: 6.5rem;
+                }
+                padding: 1.25rem 1.25rem 1.25rem 3rem;
+            }
+            #third-1 {
+                margin-top: 3rem;
+                p {
+                    font-size: 1.5rem;
+                    padding: 0 8rem;
+                    text-align: center;
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+            #third-2 {
+                padding: 0;
+                margin: 6rem 0;
+                #quote {
+                    margin: 0 8rem 0 12rem;
+                    .resize {
+                        img {
+                            width: 2.5rem;
+                        }
+                    }
+                    #openingquote {
+                        padding-left: 3.5rem;
+                    }
+                    #closingquote {
+                        padding-right: 3.5rem;
+                    }
+                    #content {
+                        width: 48vw;
+                        padding: 1rem 1.75rem;
+                        #content-1 {
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            br {
+                                display: none;
+                            }
+                        }
+                        #content-2 {
+                            margin-top: 0.25rem;
+                            font-size: 1.5rem;
+                        }
+                        #content-3 {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+            #third-3 {
+                padding-top: 0;
+                #funfacts {
+                    padding-bottom: 1rem;
+                    font-size: 0.85rem;
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+                .grid {
+                    margin: 0 6rem;
+                    gap: 1rem;
+                    .facts {
+                        min-height: 7.5rem;
+                        p {
+                            font-size: 0.675rem;
+                            letter-spacing: 0.1px;
+                            padding: 1rem 0.75rem;
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 540px) {
+    body {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        overflow-x: hidden;
+    }
+    
+    header {
+        #menu {
+            ul {
+                li {
+                    padding: 1.25rem 2.25rem;
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        #links {
+            left: calc((100vw - 152px) / 2);
+            top: calc(100vh - 4rem);
+            ul {
+                li {
+                    display: inline-block;
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .first {
+            #x {
+                #y {
+                    animation: y 5s linear infinite alternate;
+
+                    padding: 120px;
+                }
+            }
+            @keyframes x {
+                100% {
+                  transform: translateX( calc(100vw - 240px) );
+                }
+            }
+            @keyframes y {
+                100% {
+                  transform: translateY( calc(100vh - 240px) );
+                }
+            } 
+            #welcome {
+                position: absolute;
+                top: 10rem;
+                h1 {
+                    font-size: 2.75rem;
+                    padding-bottom: 5rem;
+                }
+                p {
+                    padding-top: 10rem;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    span {
+                        font-size: 1.85rem;
+                    }
+                }
+            }
+        }
+        .second {
+            #second-1 {
+                margin-left: 4rem;
+                padding-right: 0;
+                #specialty {
+                    font-size: 1.5rem;
+                }
+            }
+            #second-2 {
+                margin: 3.25rem 4rem 0 1rem;
+                .website {
+                    margin: 0.5rem 0;
+
+                    .overlay {
+                        p {
+                            padding: 1.5rem 1.25rem;
+                            font-size: 0.85rem;
+                            line-height: 1.25;
+                        }
+                        .lineheight {
+                            
+                            line-height: 1.875;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .third {
+            #pic {
+                bottom: 52vh;
+                #profilepic {
+                    width: 5.5rem;
+                }
+                padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+            }
+            #third-1 {
+                margin-top: 3rem;
+                p {
+                    font-size: 1.15rem;
+                    padding: 0 4.5rem;
+                    text-align: center;
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            #third-2 {
+                padding: 0;
+                margin: 2rem 0;
+                #quote {
+                    margin: 0 0.5rem 0 8rem;
+                    .resize {
+                        img {
+                            width: 1.5rem;
+                        }
+                    }
+                    #openingquote {
+                        padding-left: 3.5rem;
+                    }
+                    #closingquote {
+                        padding-right: 3.5rem;
+                    }
+                    #content {
+                        width: 50vw;
+                        padding: 1rem 1rem;
+                        #content-1 {
+                            display: none;
+                        }
+                        .phone {
+                            display: block;
+                        }
+                        #content-2 {
+                            margin-top: 0.25rem;
+                            font-size: 1.5rem;
+                            line-height: 1;
+                        }
+                        #content-3 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            #third-3 {
+                padding-top: 0;
+                #funfacts {
+                    padding-bottom: 1rem;
+                    font-size: 0.85rem;
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+                .grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    margin: 0 4rem;
+                    gap: 1.25rem;
+                    .facts {
+                        min-height: 5rem;
+                        filter: drop-shadow(6px 6px 0 rgba(0, 54, 54, 0.4));
+
+                        p {
+                            font-size: 0.585rem;
+                            letter-spacing: -0.25px;
+                            padding: 1rem 0.5rem;
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
