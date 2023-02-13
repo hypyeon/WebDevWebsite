@@ -19,7 +19,6 @@ $urbanist: 'Urbanist', sans-serif;
 $darkCyan: #00221C;
 
 @mixin pltPrimary {
-    background-color: #ffffe9;
     #y {
         background-color: #FFFD95;
     }
@@ -40,13 +39,6 @@ $darkCyan: #00221C;
 }
 */
 
-@mixin portBg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-}
-
 @mixin noStyle {
     text-decoration: none;
     list-style: none;
@@ -54,6 +46,13 @@ $darkCyan: #00221C;
     &:visited {
         text-decoration: none;
     }
+}
+
+@mixin textOnPics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin fontGrad {

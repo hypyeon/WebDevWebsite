@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <div id="gradientBg"></div>
     <header>
         <nav id="menu">
             <ul class="flex-dir-row j-c-center noStyle">
@@ -51,82 +52,104 @@
             <div id="x">
                 <div id="y"></div>
             </div>
+            <div id="x-2">
+                <div id="y-2"></div>
+            </div>
             <div id="welcome">
-                <h1>Welcome to <br>
-                my humble abode.</h1>
-                <p>
+                <h1 data-aos="fade-zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1500"
+                    data-aos-once="true">
+                    Welcome to <br>
+                    my humble abode.
+                </h1>
+                <p data-aos="fade-zoom-in"
+                data-aos-delay="1000"
+                data-aos-duration="1500"
+                data-aos-once="true">
                     Hi. My name is HaYeong. <br>
                     I build websites <span>from scratch</span>.    
                 </p>
             </div>
         </div>
-        <div class="section second flex-dir-row j-c-center" id="portfolio">
+        <div class="section second flex j-c-center" id="portfolio">
             <div class="flex-dir-col j-c-center" id="second-1">
                 <div id="specialty">
                     <div 
                     data-aos="fade-right"
-                    data-aos-delay="800"
+                    data-aos-delay="200"
                     data-aos-duration="1500"
                     data-aos-once="true">
                         <p id="clear">Clear layouts.</p>
                     </div>
                     <div 
                     data-aos="fade-right"
-                    data-aos-delay="1600"
+                    data-aos-delay="400"
                     data-aos-duration="1500"
                     data-aos-once="true">
                         <p id="color">Accessible color palette.</p>
                     </div>
                     <div 
                     data-aos="fade-right"
-                    data-aos-delay="2400"
+                    data-aos-delay="600"
                     data-aos-duration="1500"
                     data-aos-once="true">
                         <p id="responsive">Desktop and mobile friendly.</p>
                     </div>
                 </div>
             </div>
-            <div class="flex-dir-col j-c-center" id="second-2">
-                <a href="https://hypyeon.github.io/portfolio-tipcalculator/" target="_blank">
-                    <div class="website tip">
-                        <div class="overlay">
-                            <p>"SPLITTER" <br>Tip Calculator</p>
-                        </div>
-                    </div>    
-                </a>
-                <a href="https://hypyeon.github.io/portfolio-newshomepage/" target="_blank">
-                    <div class="website news">
-                        <div class="overlay">
-                            <p class="lineheight">News Homepage</p>
-                        </div>
-                    </div>    
-                </a>
-                <a href="https://hypyeon.github.io/portfolio-previewcard/" target="_blank">
-                    <div class="website preview">
-                        <div class="overlay">
-                            <p class="lineheight">Preview Card</p>
-                        </div>
-                    </div>    
-                </a>
-                <a href="https://hypyeon.github.io/portfolio-sunnyside/" target="_blank">
-                    <div class="website landing">
-                        <div class="overlay">
-                            <p>"Sunnyside" <br>Landing page</p>
-                        </div>
-                    </div>    
-                </a>
+            <div class="flex j-c-center" id="second-2"
+            data-aos="fade-zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+            data-aos-once="true">
+                <div class="website" id="tipcalculator">
+                    <a href="https://hypyeon.github.io/portfolio-tipcalculator/" target="_blank">
+                        <img src="./images/splitter.png" alt="SPLITTER">
+                        <p class="webtitle">"SPLITTER" <br>Tip Calculator</p>    
+                    </a>
+                </div>
+                <div class="website" id="newshome">
+                    <a href="https://hypyeon.github.io/portfolio-newshomepage/" target="_blank">
+                        <img src="./images/newshome.png" alt="News Home"> 
+                        <p class="webtitle oneline">News Homepage</p>
+                    </a>    
+                </div>
+                <div class="website" id="previewcard">
+                    <a href="https://hypyeon.github.io/portfolio-previewcard/" target="_blank">
+                        <img src="./images/previewcard.png" alt="Preview Card">
+                        <p class="webtitle oneline">Preview Card</p>    
+                    </a> 
+                </div>
+                <div class="website" id="sunnyside">
+                    <a href="https://hypyeon.github.io/portfolio-sunnyside/" target="_blank">
+                        <img src="./images/sunnyside.png" alt="Sunnyside Landing Page">
+                        <p class="webtitle">"Sunnyside" <br>Landing page</p>
+                    </a> 
+                </div>
             </div>
         </div>
 
         <div class="section third flex-dir-col center" id="about">
-            <div id="gradientBg"></div>
-            <div id="pic">
+            <div id="pic"
+            data-aos="fade-right"
+            data-aos-delay="800"
+            data-aos-duration="1200"
+            data-aos-once="true">
                 <img src="./images/IMG_8836.JPG" alt="Profile Photo" id="profilepic">
             </div>
-            <div id="third-1">
-                <p>I can bring you multipage static websites with <span>appealing</span> animation effects.</p>
+            <div id="third-1"
+            data-aos="fade-zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+            data-aos-once="true">
+                <p>I can bring you multipage static websites <br id="break-1"> with <span>appealing</span> animation effects.</p>
             </div>
-            <div class="flex-dir-row" id="third-2">
+            <div class="flex-dir-row" id="third-2"
+            data-aos="fade-zoom-in"
+            data-aos-delay="600"
+            data-aos-duration="1500"
+            data-aos-once="true">
                 <div class="flex-dir-row" id="quote">
                     <div class="resize" id="openingquote">
                         <img src="./images/icons8-quote-left-100.png" alt="Opening Quote">
@@ -135,7 +158,7 @@
                     data-aos="fade-up"
                     data-aos-delay="600"
                     data-aos-duration="1200"
-                    data-aos-once="false">
+                    data-aos-once="true">
                         <p id="content-1">
                             If you need a website for your small business <br>
                             (a restaurant, a cafe, a studio, or a bar, you name it!), <br>
@@ -144,7 +167,7 @@
                             or need a webmaster who regularly updates <br>
                             and manages your website, 
                         </p>
-                        <p class="phone">
+                        <p id="content-phone">
                             If you need a website, <br>
                             have one but need a touch-up or <br>
                             a web support specialist, 
@@ -162,25 +185,49 @@
                 </div>
             </div>
             <div class="flex-dir-col" id="third-3">
-                <p id="funfacts">
+                <p id="funfacts"
+                data-aos="fade-zoom-in"
+                data-aos-delay="1000"
+                data-aos-duration="1600"
+                data-aos-once="true">
                     cool fun facts <span>about me</span>
                 </p>
                 <div class="grid">
-                    <div class="facts">
+                    <div class="facts"
+                    data-aos="fade-up"
+                    data-aos-delay="1000"
+                    data-aos-duration="1200"
+                    data-aos-once="true"
+                    data-aos-offset="0">
                         <p>English is my second language. I'm a native Korean speaker who can also communicate in Mandarin Chinese.</p>
                     </div>
-                    <div class="facts">
+                    <div class="facts"
+                    data-aos="fade-up"
+                    data-aos-delay="1200"
+                    data-aos-duration="1200"
+                    data-aos-once="true"
+                    data-aos-offset="0">
                         <p>I DJ for fun! <br>
                             My favorite music genres are dance, trap, hip-hop <br>
                             and future house.</p>
                     </div>
-                    <div class="facts">
+                    <div class="facts"
+                    data-aos="fade-up"
+                    data-aos-delay="1400"
+                    data-aos-duration="1200"
+                    data-aos-once="true"
+                    data-aos-offset="0">
                         <p>
                             I love me some wine on a rainy day. <br>
                             #portland_vibe
                         </p>
                     </div>
-                    <div class="facts">
+                    <div class="facts"
+                    data-aos="fade-up"
+                    data-aos-delay="1600"
+                    data-aos-duration="1200"
+                    data-aos-once="true"
+                    data-aos-offset="0">
                         <p>I have a Blue Heeler mixed with German Shepherd. <br>
                             He sleeps like a human and loves PB and apples.</p>
                     </div>

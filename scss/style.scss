@@ -1,8 +1,12 @@
 @import './variables';
 @import './animations';
 @import './globals';
-@import './responsive';
 
+body {
+    #gradientBg {
+        @include gradientBg;
+    }
+}
 header {
     #menu {
         z-index: 5;
@@ -11,9 +15,12 @@ header {
         ul {
             background-color: rgba(209, 255, 248, 0.45);
             width: 100vw;
+            height: 8vh;
+            display: flex;
+            align-items: center;
 
-            li {
-                padding: 1rem 8rem;
+            li {          
+                padding: 0 8rem;
                 a {
                     color: #00715e;
                     font-family: $chakra;
@@ -30,11 +37,10 @@ header {
             }
         }
     }
-
     #links {
         position: fixed;
         left: calc(100vw - 6.5rem);
-        top: calc((100vh - 192px)/2);
+        bottom: calc((100vh - 192px)/2);
         width: fit-content;
         z-index: 1;
     
@@ -49,11 +55,11 @@ header {
 main {
     .first {
         height: 100vh;
+        width: 100vw;
         @include pltPrimary;
-
         #x {
             #y {
-                padding: 240px;
+                padding: 200px;
                 width: fit-content;
                 border-radius: 50%;
                 position: fixed;
@@ -64,37 +70,38 @@ main {
             font-family: $chakra;
             position: absolute;
             left: 8vw;
-            top: calc((100vh - (5rem*1.1*2 + 10rem + 1.5rem*1.75*2)) / 2 + 1.5rem);
-
+            padding-top: 8vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
             h1 {
                 line-height: 1.1;
-                font-size: 6rem;
+                font-size: 5.25rem;
                 font-weight: 400;
-
-                padding-bottom: 10rem;
             }
             p {
-                font-size: 1.75rem;
-                line-height: 1.75;
+                font-size: 1.65rem;
+                line-height: 3rem;
                 span {
                     font-family: $dokdo;
                     font-size: 2.5rem;
-                    line-height: 0.75;
+                    line-height: 3rem;
                 }
             }    
         }
     }
     .second {
         height: 100vh;
-        background-color: #fff0f9;
+        width: 100vw;
+        padding-top: 8vh;
 
         #second-1 {
-            padding: 2.75rem 4rem 2.75rem 0;
-            margin-left: 8rem;
+            padding-right: 10vw;
             #specialty {
                 font-family: $urbanist;
                 font-weight: 600;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 p {
                     padding: 1.25rem 0;
                 }
@@ -107,69 +114,54 @@ main {
                 #responsive {
                     color: rgb(0, 86, 73);
                 }
-                
             }
         }
-
         #second-2 {
-            padding: 6rem 0;
-            margin: 0 8rem 0 5rem;
-    
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 7.5vh 0;
             .website {
-                @include portBg;
-                margin: 1rem 0;
-                filter: drop-shadow(7px -7px 0 rgba(0, 51, 42, 0.9));
-    
-                .overlay {
-                    opacity: 1;
-                    transition: opacity ease-out .6s;
-
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.9);
+                position: relative;
+                img {
+                    filter: drop-shadow(5px 5px 0 rgba(0, 51, 42, 0.9));
                     border: 2px rgb(0, 65, 55) solid;
-
-                    p {
-                        padding: 3rem 3.5rem;
-
-                        text-decoration: none;
-                        font-family: $chakra;
-                        color: rgb(0, 70, 68);
-                        font-weight: 600;
-                        font-size: 1.5rem;
-                        letter-spacing: 2.75px;
-                    }
+                    width: 22vw;
+                    height: 16.5vh;
+                    object-fit: cover;    
                 }
-                .overlay:hover {
+                .webtitle {
+                    @include noStyle;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 2px;
+                    padding: 2.5rem 0;
+                    transform: translate(0, - 50%);
+                    font-family: $chakra;
+                    color: rgb(0, 70, 68);
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    letter-spacing: 2.75px;
+                    width: calc(100% - 6px);
+                    background-color: rgba(255, 255, 255, 0.8);
+                    transition: .4s linear;
+                }
+                .webtitle:hover {
                     opacity: 0;
                 }
-            }
-            
-            .tip {
-                background-image: url(../images/splitter.png);
-                margin-top: 4rem;
-            }
-            .news {
-                background-image: url(../images/newshome.png);
-            }
-            .preview {
-                background-image: url(../images/previewcard.png);
-            }
-            .landing {
-                background-image: url(../images/sunnyside.png);
-            }
-            
+                .oneline {
+                    padding: 3.5rem 0;
+                }
+            }            
         }
-    
     }
-
     .third {
+        height: 100vh;
+        width: 100vw;
         position: relative;
         font-family: $chakra;
+        padding-top: 8vh;
 
-        #gradientBg {
-            @include gradientBg;
-        }
         #pic {
             position: absolute;
             left: 0;
@@ -184,15 +176,16 @@ main {
                 border-radius: 50%;
             }
         }
-        #third-1 {
-            margin-top: 6rem;
-
+        #third-1 {            
             p {
                 color: $darkCyan;
                 padding: 2rem 0;
                 font-size: 1.75rem;
                 font-weight: 500;
                 letter-spacing: 1px;
+                #break-1 {
+                    display: none;
+                }
                 span {
                     font-size: 2.25rem;
                     font-family: $caveat;
@@ -227,13 +220,12 @@ main {
                     padding: 2rem 3rem;
                     border-radius: 45px;
                     font-family: $alef;
-
                     #content-1 {
                         font-size: 1.35rem;
                         line-height: 1.4;
                         letter-spacing: 0.15px;
                     }
-                    .phone {
+                    #content-phone {
                         display: none;
                     }
                     #content-2 {
@@ -295,169 +287,173 @@ main {
     }
     
 }
-@media only screen and (max-width: 1000px) {
-    header {
-        #menu {
-            ul {
-                li {
-                    padding: 1rem 6rem;
-                    a {
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-        #links {
-            top: calc(((100vh - 144px)/2) + 1rem);
-            left: calc(100vw - 4rem);
-
-            img {
-                width: 1.25rem;
-            }
-        }
-    }
+@media only screen and (max-width: 1366px) {
     main {
-        .first {
-            #x {
-                #y {
-                    padding: 180px;
-                }
-            }
-            @keyframes x {
-                100% {
-                  transform: translateX( calc(100vw - 360px) );
-                }
-            }
-            @keyframes y {
-                100% {
-                  transform: translateY( calc(100vh - 360px) );
-                }
-            } 
-            #welcome {
-                top: 10rem;
-                h1 {
-                    font-size: 3.75rem;
-                    padding-bottom: 5rem;
-                }
-                p {
-                    font-size: 1.25rem;
-                    line-height: 1.5rem;
-                    span {
-                        font-size: 1.85rem;
-                    }
-                }
-            }
-        }
         .second {
-            #second-1 {
-                margin: 3.25rem 0 0 6rem;
-                #specialty {
-                    font-size: 2.25rem;
-                }
-            }
             #second-2 {
-                margin: 3.25rem 8rem 0 3rem;
                 .website {
-                    margin: 0.75rem 0;
-                    .overlay {
-                        p {
-                            padding: 1.5rem 1.5rem;
-                            font-size: 1rem;
-                        }
+                    .webtitle {
+                        padding: 2rem 0;
+                    }
+                    .oneline {
+                        padding: 3rem 0;
                     }
                 }
             }
         }
         .third {
+            #third-2 {
+                padding: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 912px) {
+    header {
+        #menu {
+            ul {
+                li {
+                    padding: 0 4rem;
+                    a {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .first {
+            #welcome {
+                h1 {
+                    font-size: 4.5rem;
+                }
+            }
+        }
+        .second {
+            flex-direction: column;
+            
+            #second-1 {
+                padding-right: 0;
+                padding-bottom: 6rem;
+                align-items: center;
+            }
+            #second-2 {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 0;
+                .website {
+                    padding: 1rem;
+                    img {
+                        width: 36vw;
+                        height: 16vh;
+                    }
+                    .webtitle {
+                        width: fit-content;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 2rem;
+                    }
+                    .oneline {
+                        padding: 3rem;
+                    }
+                }
+                
+            }
+        }
+        .third {
+            padding-top: 8vh;
             #pic {
-                bottom: 42vh;
+                left: -3.5rem;
+                bottom: 46vh;
+            }
+            #third-1 {
+                margin: 0;
+                p {
+                    text-align: center;
+                    #break-1 {
+                        display: block;
+                    }
+                }
+            }
+            #third-2 {
+                padding: 2rem 0 6rem 0;
+                #quote {
+                    margin: 0 4.5rem 0 11rem;
+                    .resize {
+                        img {
+                            width: 3rem;
+                        }
+                    }
+                    #openingquote {
+                        padding-top:  0;
+                        padding-right: 2rem;
+                    }
+                    #closingquote {
+                        padding-left: 2rem;
+                        padding-bottom: 0;
+                    }
+                    #content {
+                        padding: 0;
+                        #content-1, #content-3 {
+                            display: none;
+                        }
+                        #content-phone {
+                            display: block;
+                            font-size: 1.725rem;
+                        }
+                        #content-2 {
+                            font-size: 2.25rem;
+                        }        
+                    }
+                }
+            }
+            #third-3 {
+                .grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 786px) {
+    main {
+        .third {
+            #pic {
+                bottom: 54vh;
+                padding: 1rem 1rem 1rem 5rem;
                 #profilepic {
                     width: 8rem;
                 }
-                padding: 1.25rem 1.25rem 1.25rem 3.5rem;
             }
-            #third-1 {
-                margin-top: 3rem;
+            #third-1 {            
                 p {
-                    font-size: 1.25rem;
                     padding: 0;
-                    span {
-                        font-size: 1.75rem;
-                    }
                 }
             }
             #third-2 {
-                padding: 0;
-                margin: 2rem 0;
+                padding: 3rem 0 5rem 0;
                 #quote {
-                    margin: 0 2rem 0 10rem;
-                    .resize {
-                        img {
-                            width: 2.5rem;
-                        }
-                    }
-                    #openingquote {
-                        padding-left: 3.5rem;
-                    }
-                    #closingquote {
-                        padding-right: 3.5rem;
+                    #openingquote, #closingquote {
+                        display: none;
                     }
                     #content {
-                        width: 52vw;
-                        padding: 1rem 3rem;
-                        #content-1 {
-                            font-size: 1rem;
-                            line-height: 1.5;
-                            br {
-                                display: none;
-                            }
-                        }
-                        #content-2 {
-                            margin-top: 0.25rem;
-                            font-size: 1.65rem;
-                        }
-                        #content-3 {
-                            font-size: 0.6rem;
-                        }
+                        #content-phone {
+                            font-size: 1.25rem;
+                        }        
                     }
                 }
             }
-            #third-3 {
-                padding-top: 0;
-                #funfacts {
-                    padding-bottom: 0.75rem;
-                    font-size: 0.85rem;
-                    span {
-                        font-size: 0.8rem;
-                    }
-                }
-                .grid {
-                    margin: 0 4.5rem;
-                    gap: 1.25rem;
-                    .facts {
-                        min-height: 7.5rem;
-                        p {
-                            font-size: 0.8rem;
-                            letter-spacing: 0.1px;
-                            padding: 0 1.5rem;
-                        }
-                    }
-                }
-            }
+
         }
     }
 }
-@media only screen and (max-width: 768px) {
-
-    body {
-        overflow-x: hidden;
-    }
-    
+@media only screen and (max-width: 540px) {
     header {
         #menu {
             ul {
                 li {
-                    padding: 1rem 3.75rem;
+                    padding: 0 2.5rem;
                     a {
                         font-size: 1rem;
                     }
@@ -465,368 +461,187 @@ main {
             }
         }
         #links {
-            top: calc(((100vh - 144px)/2) + 1rem);
-            left: calc(100vw - 5rem);
-            img {
-                width: 1.5rem;
+            left: calc((100vw - 156px) / 2);
+            bottom: 1rem;
+            ul {
+                display: flex;
             }
         }
     }
     main {
         .first {
             #x {
-                animation: x 5s linear infinite alternate;
-                #y {
-                    padding: 180px;
+                display: none;
+            }
+            #x-2 {
+                #y-2 {
+                    padding: 100px;
+                    width: fit-content;
+                    border-radius: 50%;
+                    position: fixed;
+                    background-color: #FFFD95;
                 }
             }
-            @keyframes x {
-                100% {
-                  transform: translateX( calc(100vw - 360px) );
-                }
-            }
-            @keyframes y {
-                100% {
-                  transform: translateY( calc(100vh - 360px) );
-                }
-            } 
             #welcome {
-                top: 10rem;
                 h1 {
-                    font-size: 3.75rem;
-                    padding-bottom: 5rem;
+                    font-size: 2.5rem;
                 }
                 p {
-                    padding-top: 26rem;
-                    font-size: 1.25rem;
-                    line-height: 1.5rem;
+                    font-size: 1.15rem;
+                    line-height: 2rem;
                     span {
-                        font-size: 1.85rem;
+                        font-size: 1.75rem;
+                        line-height: 2rem;
                     }
                 }
             }
         }
         .second {
             #second-1 {
-                margin: 3.25rem 0 0 6rem;
-                padding-right: 0;
+                padding-bottom: 1.5rem;
                 #specialty {
-                    font-size: 2.25rem;
+                    font-size: 1.65rem;
+                    p {
+                        padding: .5rem 0;
+                    }
                 }
             }
             #second-2 {
-                margin: 3.25rem 10rem 0 3rem;
                 .website {
-                    margin: 0.75rem 0;
-
-                    .overlay {
-                        p {
-                            padding: 1.5rem 1.5rem;
-                            font-size: 0.85rem;
-                            line-height: 1.25;
-                        }
-                        .lineheight {
-                            
-                            line-height: 1.875;
-                        }
+                    padding: .4rem;
+                    img {
+                        width: 32vw;
+                    }
+                    .webtitle {
+                        font-size: 1rem;
+                        padding: 1rem;
+                    }
+                    .oneline {
+                        padding: 1.75rem;
                     }
                 }
-                
             }
         }
         .third {
             #pic {
-                bottom: 44vh;
+                bottom: 50vh;
+                border-radius: 0 3.5rem 3.5rem 0;
                 #profilepic {
-                    width: 6.5rem;
+                    width: 5.25rem;
+                    padding: .15rem;
                 }
-                padding: 1.25rem 1.25rem 1.25rem 3rem;
             }
             #third-1 {
-                margin-top: 3rem;
                 p {
-                    font-size: 1.5rem;
-                    padding: 0 8rem;
-                    text-align: center;
-                    span {
-                        font-size: 1.75rem;
+                    font-size: 1.15rem;
+                    span { 
+                        font-size: 1.25rem;
                     }
                 }
             }
             #third-2 {
-                padding: 0;
-                margin: 6rem 0;
+                padding: 2rem 0;
                 #quote {
-                    margin: 0 8rem 0 12rem;
-                    .resize {
-                        img {
-                            width: 2.5rem;
-                        }
-                    }
-                    #openingquote {
-                        padding-left: 3.5rem;
-                    }
-                    #closingquote {
-                        padding-right: 3.5rem;
-                    }
+                    margin: 0 6rem 0 8rem;
                     #content {
-                        width: 48vw;
-                        padding: 1rem 1.75rem;
-                        #content-1 {
-                            font-size: 1rem;
-                            line-height: 1.5;
-                            br {
-                                display: none;
-                            }
+                        #content-phone {
+                            font-size: .85rem;
                         }
                         #content-2 {
-                            margin-top: 0.25rem;
-                            font-size: 1.5rem;
-                        }
-                        #content-3 {
-                            font-size: 0.6rem;
+                            font-size: 1.25rem;
                         }
                     }
                 }
             }
             #third-3 {
-                padding-top: 0;
                 #funfacts {
-                    padding-bottom: 1rem;
-                    font-size: 0.85rem;
-                    span {
-                        font-size: 0.8rem;
-                    }
+                    display: none;
                 }
                 .grid {
-                    margin: 0 6rem;
-                    gap: 1rem;
+                    margin: 0 3rem;
+                    gap: .75rem;
                     .facts {
-                        min-height: 7.5rem;
+                        min-height: fit-content;
+                        filter: none;
                         p {
-                            font-size: 0.675rem;
-                            letter-spacing: 0.1px;
-                            padding: 1rem 0.75rem;
-                            br {
-                                display: none;
-                            }
+                            font-size: .75rem;
+                            padding: 1rem;
                         }
                     }
                 }
             }
         }
     }
-
 }
-@media only screen and (max-width: 540px) {
-    body {
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        overflow-x: hidden;
-    }
-    
+@media only screen and (max-width: 414px) {
     header {
         #menu {
             ul {
                 li {
-                    padding: 1.25rem 2.25rem;
+                    padding: 0 1.35rem;
                     a {
-                        font-size: 0.9rem;
-                    }
-                }
-            }
-        }
-        #links {
-            left: calc((100vw - 152px) / 2);
-            top: calc(100vh - 4rem);
-            ul {
-                li {
-                    display: inline-block;
-                    img {
-                        width: 1.5rem;
+                        font-size: 1rem;
                     }
                 }
             }
         }
     }
     main {
-        .first {
-            #x {
-                #y {
-                    animation: y 5s linear infinite alternate;
-
-                    padding: 120px;
-                }
-            }
-            @keyframes x {
-                100% {
-                  transform: translateX( calc(100vw - 240px) );
-                }
-            }
-            @keyframes y {
-                100% {
-                  transform: translateY( calc(100vh - 240px) );
-                }
-            } 
-            #welcome {
-                position: absolute;
-                top: 10rem;
-                h1 {
-                    font-size: 2.75rem;
-                    padding-bottom: 5rem;
-                }
-                p {
-                    padding-top: 10rem;
-                    font-size: 1.25rem;
-                    line-height: 1.5rem;
-                    span {
-                        font-size: 1.85rem;
-                    }
-                }
-            }
-        }
         .second {
             #second-1 {
-                margin-left: 4rem;
-                padding-right: 0;
+                padding-bottom: 5rem;
                 #specialty {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
             }
             #second-2 {
-                margin: 3.25rem 4rem 0 1rem;
                 .website {
-                    margin: 0.5rem 0;
-
-                    .overlay {
-                        p {
-                            padding: 1.5rem 1.25rem;
-                            font-size: 0.85rem;
-                            line-height: 1.25;
-                        }
-                        .lineheight {
-                            
-                            line-height: 1.875;
-                        }
+                    padding: .4rem;
+                    img {
+                        width: 36vw;
+                    }
+                    .webtitle {
+                        font-size: 1rem;
+                        padding: 1rem;
+                    }
+                    .oneline {
+                        padding: 1.75rem 2rem;
                     }
                 }
-                
             }
         }
         .third {
             #pic {
                 bottom: 52vh;
                 #profilepic {
-                    width: 5.5rem;
+                    padding: .05rem;
                 }
-                padding: 0.75rem 0.75rem 0.75rem 1.5rem;
             }
             #third-1 {
-                margin-top: 3rem;
                 p {
-                    font-size: 1.15rem;
-                    padding: 0 4.5rem;
-                    text-align: center;
-                    span {
-                        font-size: 1.5rem;
+                    font-size: .95rem;
+                    line-height: 2rem;
+                    span { 
+                        font-size: 1.35rem;
                     }
                 }
             }
             #third-2 {
-                padding: 0;
-                margin: 2rem 0;
                 #quote {
-                    margin: 0 0.5rem 0 8rem;
-                    .resize {
-                        img {
-                            width: 1.5rem;
-                        }
-                    }
-                    #openingquote {
-                        padding-left: 3.5rem;
-                    }
-                    #closingquote {
-                        padding-right: 3.5rem;
-                    }
-                    #content {
-                        width: 50vw;
-                        padding: 1rem 1rem;
-                        #content-1 {
-                            display: none;
-                        }
-                        .phone {
-                            display: block;
-                        }
-                        #content-2 {
-                            margin-top: 0.25rem;
-                            font-size: 1.5rem;
-                            line-height: 1;
-                        }
-                        #content-3 {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            #third-3 {
-                padding-top: 0;
-                #funfacts {
-                    padding-bottom: 1rem;
-                    font-size: 0.85rem;
-                    span {
-                        font-size: 0.8rem;
-                    }
-                }
-                .grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    margin: 0 4rem;
-                    gap: 1.25rem;
-                    .facts {
-                        min-height: 5rem;
-                        filter: drop-shadow(6px 6px 0 rgba(0, 54, 54, 0.4));
-
-                        p {
-                            font-size: 0.585rem;
-                            letter-spacing: -0.25px;
-                            padding: 1rem 0.5rem;
-                            br {
-                                display: none;
-                            }
-                        }
-                    }
+                    margin: 0 1.5rem 0 8rem;
                 }
             }
         }
     }
 }
-@media only screen and (max-width: 390px) {
-
-    body {
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        overflow-x: hidden;
-    }
-    
+@media only screen and (max-width: 375px) {
     header {
         #menu {
             ul {
                 li {
-                    padding: 1rem 1.15rem;
+                    padding: 0 1.15rem;
                     a {
-                        font-size: 0.75rem;
-                        letter-spacing: 2px;
-                    }
-                }
-            }
-        }
-        #links {
-            left: calc((100vw - 140px) / 2);
-            top: calc(100vh - 3.75rem);
-            ul {
-                li {
-                    display: inline-block;
-                    img {
-                        width: 1.25rem;
+                        font-size: .95rem;
                     }
                 }
             }
@@ -834,154 +649,66 @@ main {
     }
     main {
         .first {
-            #x {
-                #y {
-                    animation: y 5s linear infinite alternate;
-
-                    padding: 120px;
-                }
-            }
-            @keyframes x {
-                100% {
-                  transform: translateX( calc(100vw - 240px) );
-                }
-            }
-            @keyframes y {
-                100% {
-                  transform: translateY( calc(100vh - 240px) );
-                }
-            } 
             #welcome {
-                position: absolute;
-                top: 10rem;
                 h1 {
-                    font-size: 2.25rem;
-                    padding-bottom: 5rem;
-                }
-                p {
-                    padding-top: 8rem;
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    span {
-                        font-size: 1.85rem;
-                    }
+                    font-size: 2.75rem;
                 }
             }
         }
         .second {
             #second-1 {
-                margin-left: 2.5rem;
-                margin-top: 2.5rem;
-                padding-right: 0;
-                #specialty {
-                    font-size: 1.5rem;
-                }
+                padding-bottom: 3.5rem;
             }
             #second-2 {
-                margin: 3.25rem 3rem 0 2rem;
                 .website {
-                    margin: 0.5rem 0;
-                    .overlay {
-                        p {
-                            padding: 1.25rem 1.15rem;
-                            font-size: 0.75rem;
-                            line-height: 1;
-                        }
-                        .lineheight {
-                            line-height: 1.5;
-                        }
+                    padding: .4rem;
+                    img {
+                        width: 36vw;
+                    }
+                    .webtitle {
+                        font-size: .75rem;
+                        padding: .75rem;
+                    }
+                    .oneline {
+                        padding: 1.25rem 1.5rem;
                     }
                 }
-                
             }
         }
         .third {
             #pic {
-                bottom: 54vh;
+                bottom: 50vh;
                 #profilepic {
-                    width: 5rem;
+                    width: 4.5rem;
+                    padding: .025rem;
                 }
-                padding: 0.5rem 0.5rem 0.5rem 1rem;
             }
             #third-1 {
-                margin-top: 1rem;
                 p {
-                    font-size: 0.85rem;
-                    padding: 0 2rem;
-                    text-align: center;
-                    span {
-                        font-size: 1.25rem;
+                    font-size: .85rem;
+                    line-height: 1.1rem;
+                    span { 
+                        font-size: 1.2rem;
                     }
                 }
             }
             #third-2 {
-                padding: 0;
-                margin: 2.25rem 0 1.5rem 0;
                 #quote {
-                    margin: 0 1rem 0 7rem;
-                    .resize {
-                        img {
-                            width: 1.5rem;
-                        }
-                    }
-                    #openingquote {
-                        padding-left: 3.5rem;
-                    }
-                    #closingquote {
-                        padding-right: 3.5rem;
-                    }
-                    #content {
-                        width: 50vw;
-                        padding: 0.5rem 0.5rem;
-                        #content-1 {
-                            display: none;
-                        }
-                        .phone {
-                            display: block;
-                            font-size: 0.75rem;
-                            br {
-                                display: none;
-                            }
-                        }
-                        #content-2 {
-                            margin-top: 0.15rem;
-                            font-size: 1.25rem;
-                            line-height: 1;
-                        }
-                        #content-3 {
-                            display: none;
-                        }
-                    }
+                    margin: 0 1.5rem 0 8rem;
                 }
             }
             #third-3 {
-                padding-top: 0;
-                #funfacts {
-                    padding-bottom: 1rem;
-                    font-size: 0.75rem;
-                    span {
-                        font-size: 0.7rem;
-                    }
-                }
                 .grid {
-                    grid-template-columns: repeat(2, 1fr);
-                    margin: 0 4rem;
-                    gap: 1.25rem;
+                    margin: 0 1rem;
                     .facts {
-                        min-height: 5rem;
-                        filter: drop-shadow(6px 6px 0 rgba(0, 54, 54, 0.4));
-
                         p {
-                            font-size: 0.575rem;
-                            letter-spacing: -0.15px;
-                            padding: 1rem 0.5rem;
-                            br {
-                                display: none;
-                            }
+                            font-size: .65rem;
+                            padding: .5rem;
                         }
                     }
                 }
             }
         }
     }
+
 }
