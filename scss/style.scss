@@ -2,11 +2,6 @@
 @import './animations';
 @import './globals';
 
-body {
-    #gradientBg {
-        @include gradientBg;
-    }
-}
 header {
     #menu {
         z-index: 5;
@@ -51,11 +46,14 @@ header {
             filter: drop-shadow(0 0 5.5px rgba(0, 51, 48, 0.9));
         }    
     }
+    #gradientBg {
+        @include gradientBg;
+    }
 }
-main {
+main {        
+
     .first {
-        height: 100vh;
-        width: 100vw;
+
         @include pltPrimary;
         #x {
             #y {
@@ -65,12 +63,12 @@ main {
                 position: fixed;
             }
         }
-
-        #welcome {            
+        #welcome {    
+            padding-top: 8vh;
+       
             font-family: $chakra;
             position: absolute;
-            left: 8vw;
-            padding-top: 8vh;
+            padding-left: 8vw;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -92,8 +90,6 @@ main {
         }
     }
     .second {
-        height: 100vh;
-        width: 100vw;
         padding-top: 8vh;
 
         #second-1 {
@@ -156,8 +152,6 @@ main {
         }
     }
     .third {
-        height: 100vh;
-        width: 100vw;
         position: relative;
         font-family: $chakra;
         padding-top: 8vh;
@@ -260,11 +254,11 @@ main {
             }
             .grid {
                 grid-template-columns: repeat(4, 1fr);
-                margin: 0 10rem 4rem;
+                margin: 0 4rem;
                 gap: 1.5rem;
 
                 .facts {
-                    min-height: 8.25rem;
+                    min-height: 7.25rem;
                     display: flex;
                     align-items: center;
                     background-color: rgb(252, 246, 238);
@@ -304,6 +298,40 @@ main {
         .third {
             #third-2 {
                 padding: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1280px) {
+    main {
+        width: 100vw;
+        
+        .third {
+            #pic {
+                bottom: 36vh;
+            }
+            #third-2 {
+                #quote {
+                    #content {
+                        #content-1 {
+                            font-size: 1.15rem;
+                        }
+                        #content-2 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            #third-3 {
+                .grid {
+                    .facts {
+                        p {
+                            font-size: .9rem;
+                            line-height: 1.1rem;
+                            padding: 0 1rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -362,7 +390,6 @@ main {
             }
         }
         .third {
-            padding-top: 8vh;
             #pic {
                 left: -3.5rem;
                 bottom: 46vh;
@@ -629,6 +656,17 @@ main {
             #third-2 {
                 #quote {
                     margin: 0 1.5rem 0 8rem;
+                }
+            }
+            #third-3 {
+                .grid {
+                    .facts {
+                        p {
+                            padding: .5rem;
+                            line-height: .9rem;
+                            font-size: .75rem;
+                        }
+                    }
                 }
             }
         }
