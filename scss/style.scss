@@ -51,9 +51,7 @@ header {
     }
 }
 main {        
-
     .first {
-
         @include pltPrimary;
         #x {
             #y {
@@ -119,36 +117,36 @@ main {
             .website {
                 position: relative;
                 img {
-                    filter: drop-shadow(5px 5px 0 rgba(0, 51, 42, 0.9));
+                    filter: brightness(50%);
                     border: 2px rgb(0, 65, 55) solid;
                     width: 22vw;
                     height: 16.5vh;
-                    object-fit: cover;    
+                    object-fit: cover; 
+                    transition: .3s linear;
+   
                 }
                 .webtitle {
                     @include noStyle;
-                    position: absolute;
+                    @include textOnPics;
+                    width: 100%;
                     text-align: center;
-                    top: 50%;
-                    left: 2px;
-                    padding: 2.5rem 0;
-                    transform: translate(0, - 50%);
                     font-family: $chakra;
-                    color: rgb(0, 70, 68);
+                    color: white;
                     font-weight: 600;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     letter-spacing: 2.75px;
-                    width: calc(100% - 6px);
-                    background-color: rgba(255, 255, 255, 0.8);
-                    transition: .4s linear;
+                    transition: .3s linear;
+
                 }
-                .webtitle:hover {
-                    opacity: 0;
+            }       
+            .website:hover {
+                img {
+                    filter: brightness(100%);
                 }
-                .oneline {
-                    padding: 3.5rem 0;
+                .webtitle {
+                    color: transparent;
                 }
-            }            
+            }     
         }
     }
     .third {
@@ -189,7 +187,7 @@ main {
             }
         }
         #third-2 {
-            padding: 2rem 0;
+            padding: 0;
             #quote {
                 margin: 0 120px 0 300px;
 
@@ -377,16 +375,9 @@ main {
                         height: 16vh;
                     }
                     .webtitle {
-                        width: fit-content;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        padding: 2rem;
-                    }
-                    .oneline {
-                        padding: 3rem;
+                        font-size: 1.5rem;
                     }
                 }
-                
             }
         }
         .third {
@@ -525,7 +516,7 @@ main {
         }
         .second {
             #second-1 {
-                padding-bottom: 1.5rem;
+                padding-bottom: 3rem;
                 #specialty {
                     font-size: 1.65rem;
                     p {
@@ -609,7 +600,16 @@ main {
                     a {
                         font-size: 1rem;
                     }
+                    a:hover {
+                        display: none;
+                    }
                 }
+            }
+        }
+        #links {
+            left: calc((100vw - 144px) / 2);
+            img {
+                width: 1.5rem;
             }
         }
     }
@@ -639,7 +639,7 @@ main {
         }
         .third {
             #pic {
-                bottom: 52vh;
+                bottom: 48vh;
                 #profilepic {
                     padding: .05rem;
                 }
@@ -731,6 +731,7 @@ main {
                 }
             }
             #third-2 {
+                padding: 1rem 0;
                 #quote {
                     margin: 0 1.5rem 0 8rem;
                 }

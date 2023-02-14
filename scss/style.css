@@ -428,13 +428,15 @@ main .second #second-2 .website {
 }
 
 main .second #second-2 .website img {
-  -webkit-filter: drop-shadow(5px 5px 0 rgba(0, 51, 42, 0.9));
-          filter: drop-shadow(5px 5px 0 rgba(0, 51, 42, 0.9));
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
   border: 2px #004137 solid;
   width: 22vw;
   height: 16.5vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 main .second #second-2 .website .webtitle {
@@ -442,33 +444,32 @@ main .second #second-2 .website .webtitle {
   list-style: none;
   color: black;
   position: absolute;
-  text-align: center;
   top: 50%;
-  left: 2px;
-  padding: 2.5rem 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
   font-family: "Chakra Petch", sans-serif;
-  color: #004644;
+  color: white;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 2.75px;
-  width: calc(100% - 6px);
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: .4s linear;
-  transition: .4s linear;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 main .second #second-2 .website .webtitle:visited {
   text-decoration: none;
 }
 
-main .second #second-2 .website .webtitle:hover {
-  opacity: 0;
+main .second #second-2 .website:hover img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
-main .second #second-2 .website .oneline {
-  padding: 3.5rem 0;
+main .second #second-2 .website:hover .webtitle {
+  color: transparent;
 }
 
 main .third {
@@ -515,7 +516,7 @@ main .third #third-1 p span {
 }
 
 main .third #third-2 {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 main .third #third-2 #quote {
@@ -709,16 +710,7 @@ main .third #third-3 .grid .facts p {
     height: 16vh;
   }
   main .second #second-2 .website .webtitle {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    padding: 2rem;
-  }
-  main .second #second-2 .website .oneline {
-    padding: 3rem;
+    font-size: 1.5rem;
   }
   main .third #pic {
     left: -3.5rem;
@@ -831,7 +823,7 @@ main .third #third-3 .grid .facts p {
     line-height: 2rem;
   }
   main .second #second-1 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
   }
   main .second #second-1 #specialty {
     font-size: 1.65rem;
@@ -905,6 +897,15 @@ main .third #third-3 .grid .facts p {
   header #menu ul li a {
     font-size: 1rem;
   }
+  header #menu ul li a:hover {
+    display: none;
+  }
+  header #links {
+    left: calc((100vw - 144px) / 2);
+  }
+  header #links img {
+    width: 1.5rem;
+  }
   main .second #second-1 {
     padding-bottom: 5rem;
   }
@@ -925,7 +926,7 @@ main .third #third-3 .grid .facts p {
     padding: 1.75rem 2rem;
   }
   main .third #pic {
-    bottom: 52vh;
+    bottom: 48vh;
   }
   main .third #pic #profilepic {
     padding: .05rem;
@@ -986,6 +987,9 @@ main .third #third-3 .grid .facts p {
   }
   main .third #third-1 p span {
     font-size: 1.2rem;
+  }
+  main .third #third-2 {
+    padding: 1rem 0;
   }
   main .third #third-2 #quote {
     margin: 0 1.5rem 0 8rem;
