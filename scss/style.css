@@ -762,6 +762,9 @@ main .third #third-3 .grid .facts p {
 }
 
 @media only screen and (max-width: 786px) {
+  header #menu ul li a:hover {
+    top: 0;
+  }
   main .third #pic {
     bottom: 54vh;
     padding: 1rem 1rem 1rem 5rem;
@@ -896,9 +899,6 @@ main .third #third-3 .grid .facts p {
   }
   header #menu ul li a {
     font-size: 1rem;
-  }
-  header #menu ul li a:hover {
-    display: none;
   }
   header #links {
     left: calc((100vw - 144px) / 2);
