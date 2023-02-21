@@ -7,7 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap');
 
+$phudu: 'Phudu', cursive;
+$quicksand: 'Quicksand', sans-serif;
 $chakra: 'Chakra Petch', sans-serif;
 $nothing: 'Nothing You Could Do', cursive; 
 $chilanka: 'Chilanka', cursive;
@@ -15,29 +19,6 @@ $caveat: 'Caveat', cursive;
 $alef: 'Alef', sans-serif;
 $dokdo: 'East Sea Dokdo', cursive;
 $urbanist: 'Urbanist', sans-serif;
-
-$darkCyan: #00221C;
-
-@mixin pltPrimary {
-    #y {
-        background-color: #FFFD95;
-    }
-    h1 {
-        color: #10E689;
-    }
-    p {
-        color: #F56CAD;
-    }
-}
-
-/*
-.colorPalette-2 {
-    $backgroundColor: #2D1394;
-    $ballColor: #7654FF;
-    $bigIntroColor: #E0CE34;
-    $smallIntroColor: #B528E0;
-}
-*/
 
 @mixin noStyle {
     text-decoration: none;
@@ -60,7 +41,13 @@ $darkCyan: #00221C;
     -webkit-background-clip: text;
     color: transparent;
     padding: 0 0.25rem;
-    font-family: $caveat;
+}
+
+@mixin fontGrad2 {
+    background-image: linear-gradient(#c87100, #7900b5 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 0.25rem;
 }
 
 @mixin dropshadow {

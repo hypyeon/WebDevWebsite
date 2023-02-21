@@ -1,39 +1,142 @@
 //first section : bouncing ball
-#x {
-    animation: x 8s linear infinite alternate;
+#illubg {
+    animation: illu 2.8s ease-out infinite alternate;
 }
-#y {
-    animation: y 3s linear infinite alternate;
-}
-@keyframes x {
+@keyframes illu {
     100% {
-      transform: translateX( calc(100vw - 400px) );
+      transform: translateY(3vh);
     }
 }
-@keyframes y {
+
+#illustration {
+    animation: avatar 2.5s ease infinite alternate;
+}
+@keyframes avatar {
     100% {
-      transform: translateY( calc(100vh - 400px) );
+      transform: translateX(-1.5vw);
+    }
+}
+
+/*
+.balls {
+#xa {
+    animation: xa 3s linear infinite alternate;
+}
+#ya {
+    animation: ya 2.5s linear infinite alternate;
+}
+@keyframes xa {
+    100% {
+      transform: translateX(5vw);
+    }
+}
+@keyframes ya {
+    100% {
+      transform: translateY(8vh);
+    }
+} 
+#xd {
+    animation: xd 2s linear infinite alternate;
+}
+#yd {
+    animation: yd 3s linear infinite alternate;
+}
+@keyframes xd {
+    100% {
+      transform: translateX(-4vw);
+    }
+}
+@keyframes yd {
+    100% {
+      transform: translateY(6vh);
     }
 } 
 
-#x-2 {
-    animation: x-2 9s linear infinite alternate;
+#xb {
+    animation: xb 4s linear infinite alternate;
 }
-#y-2 {
-    animation: y-2 6.5s linear infinite alternate;
+#yb {
+    animation: yb 2.5s linear infinite alternate;
 }
-@keyframes x-2 {
+@keyframes xb {
     100% {
-      transform: translateX( calc(100vw - 200px) );
+      transform: translateX(4vw);
     }
 }
-@keyframes y-2 {
+@keyframes yb {
     100% {
-      transform: translateY( calc(100vh - 200px) );
+      transform: translateY(-8vh);
     }
 } 
 
-// third section : gradient background 
+#xc {
+    animation: xc 3s linear infinite alternate;
+}
+#yc {
+    animation: yc 5s linear infinite alternate;
+}
+@keyframes xc {
+    100% {
+      transform: translateX(-4vw);
+    }
+}
+@keyframes yc {
+    100% {
+      transform: translateY(7vh);
+    }
+} 
+
+#xe {
+    animation: xe 3s linear infinite alternate;
+}
+#ye {
+    animation: ye 5s linear infinite alternate;
+}
+@keyframes xe {
+    100% {
+      transform: translateX(-4vw);
+    }
+}
+@keyframes ye {
+    100% {
+      transform: translateY(7vh);
+    }
+} 
+
+#xf {
+    animation: xf 3s linear infinite alternate;
+}
+#yf {
+    animation: yf 4.5s linear infinite alternate;
+}
+@keyframes xf {
+    100% {
+      transform: translateX(6vw);
+    }
+}
+@keyframes yf {
+    100% {
+      transform: translateY(5vh);
+    }
+} 
+
+#xg {
+    animation: xg 4s linear infinite alternate;
+}
+#yg {
+    animation: yg 3.5s linear infinite alternate;
+}
+@keyframes xg {
+    100% {
+      transform: translateX(6vw);
+    }
+}
+@keyframes yg {
+    100% {
+      transform: translateY(5vh);
+    }
+} 
+
 @mixin gradientBg {
     position: fixed;
     animation: slide 3s ease-in-out infinite alternate;
@@ -46,41 +149,5 @@
     opacity: 0.85;
 }
 
-@keyframes slide {
-    0% {
-        transform:translateX(-25%);
-    }
-    100% {
-        transform:translateX(25%);
-    }
-} 
-
-//second section : sliding texts
-/*
-#clear {
-    color: rgb(0, 184, 156);
-    transition-delay: 1s; 
-    transition: 1s ease in;
-    animation: txtFlyIn 2s linear;
 }
-#color {
-    color: rgb(0, 135, 115);
-    transition-delay: 3s; 
-    transition: 1.2s ease in;
-    animation: txtFlyIn 3s linear;      
-}
-#responsive {
-    color: rgb(0, 59, 50);
-    transition-delay: 5s; 
-    transition: 1.4s ease in;
-    animation: txtFlyIn 4s linear;      
-}
-@keyframes txtFlyIn {
-    0% { 
-        transform: translateX(-150%); 
-    }
-    100% { 
-        transform: translateX(0%); 
-    }
-}
-*/
+*/ 

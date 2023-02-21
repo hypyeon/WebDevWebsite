@@ -11,14 +11,23 @@ html {
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
     overflow-y: scroll;
-
     height: 100%;
+}
+
+body {
+    font-family: $quicksand;
+}
+
+main {
+    background-image: linear-gradient(rgb(207, 197, 255), rgb(255, 222, 157), rgb(184, 209, 255), rgb(212, 255, 235));
+    height: 300vh;
 }
 
 .first, .second, .third {
     scroll-snap-align: center; 
     height: 100vh;
     width: 100vw;
+    z-index: 0;
 }
 
 .flex {
