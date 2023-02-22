@@ -1,24 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nothing+You+Could+Do&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 $phudu: 'Phudu', cursive;
 $quicksand: 'Quicksand', sans-serif;
-$chakra: 'Chakra Petch', sans-serif;
-$nothing: 'Nothing You Could Do', cursive; 
-$chilanka: 'Chilanka', cursive;
-$caveat: 'Caveat', cursive;
-$alef: 'Alef', sans-serif;
-$dokdo: 'East Sea Dokdo', cursive;
 $urbanist: 'Urbanist', sans-serif;
+$squarepeg: 'Square Peg', cursive;
 
 @mixin noStyle {
     text-decoration: none;
@@ -37,14 +25,21 @@ $urbanist: 'Urbanist', sans-serif;
 }
 
 @mixin fontGrad {
-    background-image: linear-gradient(15deg, rgb(0, 184, 156), rgb(255, 86, 171));
+    background-image: linear-gradient(15deg, rgba(32, 255, 233, 0.6), rgba(174, 34, 255, 0.6));
     -webkit-background-clip: text;
     color: transparent;
     padding: 0 0.25rem;
 }
 
 @mixin fontGrad2 {
-    background-image: linear-gradient(#c87100, #7900b5 80%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 0.25rem;
+}
+
+@mixin fontGrad3 {
+    background-image: linear-gradient(15deg, hsla(174, 100%, 85%, 0.25), hsla(174, 100%, 85%, 0.65), hsla(174, 100%, 85%, 0.25));
     -webkit-background-clip: text;
     color: transparent;
     padding: 0 0.25rem;
@@ -54,4 +49,12 @@ $urbanist: 'Urbanist', sans-serif;
     img {
         filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
     }
+}
+
+@mixin dropshadow-web {
+    filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
+}
+
+@mixin dropshadow2 {
+    filter: drop-shadow(0 0 6px rgba(180, 119, 255, 1));
 }

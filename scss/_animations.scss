@@ -1,19 +1,10 @@
 //first section : bouncing ball
-#illubg {
-    animation: illu 2.8s ease-out infinite alternate;
-}
-@keyframes illu {
-    100% {
-      transform: translateY(3vh);
-    }
-}
-
-#illustration {
-    animation: avatar 2.5s ease infinite alternate;
+#pfpicbg {
+    animation: avatar 2s ease infinite alternate;
 }
 @keyframes avatar {
     100% {
-      transform: translateX(-1.5vw);
+      transform: translateX(1vw);
     }
 }
 

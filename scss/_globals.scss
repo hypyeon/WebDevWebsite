@@ -19,7 +19,8 @@ body {
 }
 
 main {
-    background-image: linear-gradient(rgb(207, 197, 255), rgb(255, 222, 157), rgb(184, 209, 255), rgb(212, 255, 235));
+    //background-image: linear-gradient(rgb(197, 255, 242), rgb(226, 199, 255), rgb(255, 232, 209), rgb(255, 212, 249));
+    background-image: linear-gradient(225deg, black, rgb(0, 31, 36), rgb(44, 0, 57));
     height: 300vh;
 }
 
@@ -28,6 +29,16 @@ main {
     height: 100vh;
     width: 100vw;
     z-index: 0;
+}
+
+.walltext {
+    position: absolute;
+    h1 {
+        font-family: $urbanist;
+        font-size: 4rem;
+        transform: rotate(-90deg);
+        @include fontGrad2;
+    }
 }
 
 .flex {

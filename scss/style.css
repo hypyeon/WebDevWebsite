@@ -1,60 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nothing+You+Could+Do&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alef&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nothing+You+Could+Do&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alef&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap");
-#illubg {
-  -webkit-animation: illu 2.8s ease-out infinite alternate;
-          animation: illu 2.8s ease-out infinite alternate;
-}
-
-@-webkit-keyframes illu {
-  100% {
-    -webkit-transform: translateY(3vh);
-            transform: translateY(3vh);
-  }
-}
-
-@keyframes illu {
-  100% {
-    -webkit-transform: translateY(3vh);
-            transform: translateY(3vh);
-  }
-}
-
-#illustration {
-  -webkit-animation: avatar 2.5s ease infinite alternate;
-          animation: avatar 2.5s ease infinite alternate;
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+#pfpicbg {
+  -webkit-animation: avatar 2s ease infinite alternate;
+          animation: avatar 2s ease infinite alternate;
 }
 
 @-webkit-keyframes avatar {
   100% {
-    -webkit-transform: translateX(-1.5vw);
-            transform: translateX(-1.5vw);
+    -webkit-transform: translateX(1vw);
+            transform: translateX(1vw);
   }
 }
 
 @keyframes avatar {
   100% {
-    -webkit-transform: translateX(-1.5vw);
-            transform: translateX(-1.5vw);
+    -webkit-transform: translateX(1vw);
+            transform: translateX(1vw);
   }
 }
 
@@ -213,8 +180,7 @@ body {
 }
 
 main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cfc5ff), color-stop(#ffde9d), color-stop(#b8d1ff), to(#d4ffeb));
-  background-image: linear-gradient(#cfc5ff, #ffde9d, #b8d1ff, #d4ffeb);
+  background-image: linear-gradient(225deg, black, #001f24, #2c0039);
   height: 300vh;
 }
 
@@ -223,6 +189,21 @@ main {
   height: 100vh;
   width: 100vw;
   z-index: 0;
+}
+
+.walltext {
+  position: absolute;
+}
+
+.walltext h1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 4rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0 0.25rem;
 }
 
 .flex {
@@ -404,35 +385,36 @@ header #menu {
 }
 
 header #menu ul {
-  width: 100vw;
+  width: 40vw;
+  margin-left: 60vw;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header #menu ul li {
-  padding: 0 8rem;
-}
-
 header #menu ul li a {
-  color: white;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.45rem;
+  font-weight: 700;
   letter-spacing: 3px;
-  position: relative;
-  top: 0;
-  -webkit-transition: top ease-out .05s;
-  transition: top ease-out .05s;
-  font-weight: 900;
-  -webkit-filter: drop-shadow(1px 1px 4px #313131);
-          filter: drop-shadow(1px 1px 4px #313131);
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-filter: drop-shadow(2px 0 0 rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(2px 0 0 rgba(0, 0, 0, 0.35));
+  -webkit-transition: all ease-out .4s;
+  transition: all ease-out .4s;
 }
 
 header #menu ul li a:hover {
-  top: -4px;
+  color: white;
+  -webkit-filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.75));
+          filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.75));
 }
 
 header #links {
@@ -448,62 +430,64 @@ header #links {
   z-index: 1;
 }
 
-header #links img {
+header #links ul {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 2rem;
+  -webkit-filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+          filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+  padding: 1rem 0;
+}
+
+header #links ul img {
+  position: relative;
   width: 1.75rem;
   margin: 0.75rem;
-  -webkit-filter: drop-shadow(0 0 3.5px #717171);
-          filter: drop-shadow(0 0 3.5px #717171);
+  -webkit-filter: drop-shadow(1.5px 1.5px 0 #717171);
+          filter: drop-shadow(1.5px 1.5px 0 #717171);
+  bottom: 0;
+  left: 0;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
+}
+
+header #links ul img:active {
+  -webkit-filter: drop-shadow(-1.5px -1.5px 0 white);
+          filter: drop-shadow(-1.5px -1.5px 0 white);
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  bottom: -1.5px;
+  left: 1.5px;
 }
 
 main .first #hello {
-  position: absolute;
   left: -17vw;
-  top: 53%;
-  -webkit-transform: translateY(-53%);
-          transform: translateY(-53%);
-}
-
-main .first #hello h1 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 4.25rem;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  top: 50%;
 }
 
 main .first #hello h1 br {
   display: none;
 }
 
-main .first #illustration {
+main .first #profilepic {
+  z-index: 2;
   position: absolute;
-  left: 16vw;
-  bottom: 28vh;
-  z-index: 1;
+  left: 21vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: 5vh;
 }
 
-main .first #illustration img {
-  height: 36vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .first #illubg {
-  position: absolute;
-  top: 26vh;
-  left: 11vw;
-  z-index: 0;
-}
-
-main .first #illubg img {
-  height: 48vh;
-  -webkit-filter: drop-shadow(0 0 4px rgba(113, 113, 113, 0.6));
-          filter: drop-shadow(0 0 4px rgba(113, 113, 113, 0.6));
+main .first #profilepic img {
+  width: 12vw;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
+          filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
 }
 
 main .first #welcome {
   padding-top: 10vh;
-  left: 56%;
+  left: 60%;
   -webkit-transform: translateX(-45%);
           transform: translateX(-45%);
   width: 50vw;
@@ -521,48 +505,48 @@ main .first #welcome {
   height: 100%;
 }
 
-main .first #welcome h2 {
-  font-family: "Phudu", cursive;
-  color: #6d00a4;
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 3.5rem;
-  -webkit-filter: drop-shadow(3px 3px 1px rgba(255, 255, 255, 0.75));
-          filter: drop-shadow(3px 3px 1px rgba(255, 255, 255, 0.75));
-}
-
 main .first #welcome p {
-  color: #2c2c2c;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  padding: .5rem 0;
 }
 
-main .first #welcome p span {
-  font-family: "Phudu", cursive;
-  font-weight: 600;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c87100), color-stop(80%, #7900b5));
-  background-image: linear-gradient(#c87100, #7900b5 80%);
+main .first #welcome p #h2 {
+  font-family: "Square Peg", cursive;
+  font-size: 4.75rem;
+  font-weight: 700;
+  line-height: 5rem;
+  background-image: linear-gradient(15deg, rgba(179, 255, 247, 0.25), rgba(179, 255, 247, 0.65), rgba(179, 255, 247, 0.25));
   -webkit-background-clip: text;
   color: transparent;
   padding: 0 0.25rem;
-  -webkit-filter: drop-shadow(2px 2px 1px rgba(255, 255, 255, 0.75));
-          filter: drop-shadow(2px 2px 1px rgba(255, 255, 255, 0.75));
+  padding-bottom: 3rem;
+  -webkit-filter: drop-shadow(0 0 1px #62ffff);
+          filter: drop-shadow(0 0 1px #62ffff);
+}
+
+main .first #welcome p #highlight {
+  letter-spacing: 1px;
+  font-family: "Phudu", cursive;
+  font-weight: 600;
+  background-image: linear-gradient(15deg, rgba(32, 255, 233, 0.6), rgba(174, 34, 255, 0.6));
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0 0.25rem;
+  -webkit-filter: drop-shadow(0 0 3px black);
+          filter: drop-shadow(0 0 3px black);
+}
+
+main .first #welcome p #hashtag {
+  font-size: 1rem;
+  color: #9b9b9b;
+  text-decoration: line-through;
 }
 
 main .second #second-1 {
-  z-index: 0;
-  position: absolute;
-  top: 134vh;
+  top: 140vh;
   left: -.5rem;
-}
-
-main .second #second-1 h1 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 4.75rem;
-  line-height: 5.25rem;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
 }
 
 main .second #second-2 {
@@ -571,7 +555,7 @@ main .second #second-2 {
 
 main .second #second-2 .grid {
   width: 100%;
-  padding: 10vh 10vw 0 40vw;
+  padding: 10vh 12vw 0 34vw;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
@@ -582,11 +566,13 @@ main .second #second-2 .grid {
 
 main .second #second-2 .grid .website {
   position: relative;
+  -webkit-filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
+          filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
 }
 
 main .second #second-2 .grid .website img {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
   border: 2px #004137 solid;
   width: 100%;
   height: 20vh;
@@ -607,7 +593,6 @@ main .second #second-2 .grid .website .webtitle {
           transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  font-family: "Chakra Petch", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 1.3rem;
@@ -635,9 +620,10 @@ main .second #second-2 .grid .website:hover .webtitle {
 
 main .second #second-2 .grid #nextclient {
   position: relative;
-  border: 2px #004137 solid;
   width: 100%;
   height: 20vh;
+  -webkit-filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
+          filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
   background-color: black;
   -webkit-transition: .3s linear;
   transition: .3s linear;
@@ -654,7 +640,6 @@ main .second #second-2 .grid #nextclient .title {
           transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  font-family: "Chakra Petch", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 1.3rem;
@@ -679,7 +664,7 @@ main .second #second-2 .grid #nextclient #default {
 
 main .second #second-2 .grid #nextclient:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #dedede;
 }
 
 main .second #second-2 .grid #nextclient:hover #hover {
@@ -688,7 +673,7 @@ main .second #second-2 .grid #nextclient:hover #hover {
 }
 
 main .second #second-2 .grid #nextclient:hover #hover span {
-  color: #ed8e00;
+  color: #ae22ff;
 }
 
 main .second #second-2 .grid #nextclient:hover #default {
@@ -698,73 +683,54 @@ main .second #second-2 .grid #nextclient:hover #default {
 main .third {
   position: relative;
   padding-top: 10vh;
-  /*#pic {            
-            position: absolute;
-            left: 0;
-            bottom: 40vh;
-
-            padding: 1.25rem 1.25rem 1.25rem 3rem;
-            background-color: rgba(255, 255, 255, 0.35);
-            border-radius: 0 47.5% 47.5% 0;
-            
-            #profilepic {
-                width: 10rem;
-                border-radius: 50%;
-            }
-        }*/
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 main .third #third-1 {
-  z-index: 0;
-  position: absolute;
-  left: -7rem;
+  left: -5vw;
+  bottom: 20vh;
 }
 
-main .third #third-1 h1 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 4.5rem;
-  line-height: 5rem;
-  color: rgba(255, 255, 255, 0.65);
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+main .third #third-1 h1 #smooth {
+  font-family: "Square Peg", cursive;
+  font-size: 5rem;
 }
 
 main .third #third-2 {
+  margin: 8vh 0 0 30vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .third #third-2 #third-2-1 {
   padding: 0;
   z-index: 2;
 }
 
-main .third #third-2 #quote {
-  margin: 0 6vw 0 24vw;
+main .third #third-2 #third-2-1 .resize img {
+  width: 2.5rem;
 }
 
-main .third #third-2 #quote .resize img {
-  width: 58px;
-}
-
-main .third #third-2 #quote #openingquote {
+main .third #third-2 #third-2-1 #openingquote {
   padding-top: 10px;
   padding-left: 80px;
+  -webkit-filter: drop-shadow(0 0 6px #b477ff);
+          filter: drop-shadow(0 0 6px #b477ff);
 }
 
-main .third #third-2 #quote #openingquote img {
-  -webkit-filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
-          filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
-}
-
-main .third #third-2 #quote #closingquote {
+main .third #third-2 #third-2-1 #closingquote {
   padding-right: 80px;
   padding-bottom: 10px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-filter: drop-shadow(0 0 6px #b477ff);
+          filter: drop-shadow(0 0 6px #b477ff);
 }
 
-main .third #third-2 #quote #closingquote img {
-  -webkit-filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
-          filter: drop-shadow(0 0 4px rgba(0, 71, 57, 0.3));
-}
-
-main .third #third-2 #quote #content {
+main .third #third-2 #third-2-1 #content {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -772,486 +738,121 @@ main .third #third-2 #quote #content {
   border-radius: 45px;
 }
 
-main .third #third-2 #quote #content #content-1 {
+main .third #third-2 #third-2-1 #content #content-1 {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 2rem;
-  color: #0b0027;
+  color: #ffffff;
 }
 
-main .third #third-2 #quote #content #content-1 span {
-  font-size: 1.1rem;
+main .third #third-2 #third-2-1 #content #content-1 span {
+  font-size: 1rem;
   font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-main .third #third-2 #quote #content #content-phone {
+main .third #third-2 #third-2-1 #content #content-phone {
   display: none;
 }
 
-main .third #third-2 #quote #content #content-2 {
-  font-size: 2rem;
-  margin-top: 0.75rem;
-  font-family: "Phudu", cursive;
-  background-image: linear-gradient(15deg, #00b89c, #ff56ab);
-  -webkit-background-clip: text;
-  color: transparent;
-  padding: 0 0.25rem;
-  -webkit-filter: drop-shadow(2px 2px 0 white);
-          filter: drop-shadow(2px 2px 0 white);
+main .third #third-2 #third-2-1 #content #content-2 {
+  font-size: 3.25rem;
+  font-family: "Square Peg", cursive;
+  color: #dedede;
+  -webkit-filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
+          filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
 }
 
-main .third #third-2 #quote #content #content-3 {
+main .third #third-2 #third-2-1 #content #content-3 {
   font-size: 0.9rem;
-  color: #4a4a4a;
+  color: #929292;
   font-weight: 400;
+  text-decoration: line-through;
 }
 
-main .third #third-3 {
-  padding-top: 1.25rem;
-  z-index: 2;
+main .third #third-2 #third-2-2 {
+  margin-top: 2.5rem;
+  font-family: "Phudu", cursive;
+  color: white;
 }
 
-main .third #third-3 .grid {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  padding: 2vh 10vw 0 28vw;
+main .third #third-2 #third-2-2 form {
+  width: 40vw;
+  display: -ms-grid;
+  display: grid;
   gap: 1rem;
-}
-
-main .third #third-3 .grid .facts {
-  min-height: 7.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fbf6f9;
-  border: 2px #003636 solid;
-  -webkit-filter: drop-shadow(6px 6px 0 rgba(62, 62, 62, 0.4));
-          filter: drop-shadow(6px 6px 0 rgba(62, 62, 62, 0.4));
-}
-
-main .third #third-3 .grid .facts p {
-  width: 100%;
-  padding: 1rem;
-  font-family: "Alef", sans-serif;
-  font-size: 1rem;
   text-align: center;
-  letter-spacing: 0.25px;
 }
 
-@media only screen and (max-width: 1280px) {
-  body {
-    overflow-x: hidden;
-  }
-  header #links {
-    right: 4vw;
-  }
-  main .first #welcome {
-    left: 58%;
-  }
+main .third #third-2 #third-2-2 form label {
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 912px) {
-  header #menu ul li {
-    padding: 0 5rem;
-  }
-  header #menu ul li a {
-    font-size: 1.8rem;
-  }
-  header #links {
-    top: 88%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-  }
-  header #links ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  header #links img {
-    width: 2.25rem;
-    margin: 1.5rem;
-  }
-  main .first #hello {
-    left: -54vw;
-  }
-  main .first #hello h1 {
-    font-size: 7.5rem;
-  }
-  main .first #illustration {
-    left: 34vw;
-    bottom: 54vh;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-transform: translateX(2vw);
-            transform: translateX(2vw);
-  }
-  main .first #illustration img {
-    height: 24vh;
-  }
-  main .first #illubg {
-    top: 14vh;
-    left: 29vw;
-  }
-  main .first #illubg img {
-    height: 32vh;
-  }
-  main .first #welcome {
-    padding-top: 20vh;
-    left: 54%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 58vw;
-  }
-  main .first #welcome h2 {
-    font-size: 2.5rem;
-  }
-  main .second #second-1 {
-    top: 150vh;
-  }
-  main .second #second-1 h1 {
-    font-size: 5.75rem;
-    line-height: 7rem;
-  }
-  main .second #second-2 .grid {
-    padding: 0 10vw 28vh 10vw;
-  }
-  main .second #second-2 .grid .website img {
-    height: 12vh;
-  }
-  main .second #second-2 .grid #nextclient {
-    height: 12vh;
-  }
-  main .third {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .third #third-1 {
-    bottom: 20vh;
-  }
-  main .third #third-1 h1 {
-    font-size: 5.75rem;
-    line-height: 7rem;
-  }
-  main .third #third-2 #quote {
-    margin: 0;
-  }
-  main .third #third-3 {
-    padding: 0;
-  }
-  main .third #third-3 .grid {
-    padding: 0;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 18vh;
-    padding-left: 50vw;
-    gap: 2rem;
-  }
-  main .third #third-3 .grid .facts p {
-    width: 25vw;
-  }
+main .third #third-2 #third-2-2 form input {
+  padding: 0 .25rem;
+  height: 2rem;
+  -webkit-filter: drop-shadow(0 0 6px #b477ff);
+          filter: drop-shadow(0 0 6px #b477ff);
+  border-radius: .5rem;
+  font-family: "Quicksand", sans-serif;
 }
 
-@media only screen and (max-width: 820px) {
-  header #links {
-    top: 86%;
-  }
-  main .first #hello {
-    left: -44vw;
-    top: 54vh;
-  }
-  main .first #hello h1 {
-    font-size: 6rem;
-  }
-  main .first #welcome {
-    width: 68vw;
-    margin-left: 2rem;
-  }
-  main .first #welcome h2 {
-    font-size: 3rem;
-    padding: 1rem 0;
-  }
-  main .second #second-1 {
-    top: 152vh;
-  }
-  main .second #second-1 h1 {
-    font-size: 4.25rem;
-    line-height: 5rem;
-  }
-  main .second #second-2 .grid {
-    padding-bottom: 32vh;
-  }
-  main .third #third-1 {
-    left: -10vw;
-  }
-  main .third #third-1 h1 {
-    font-size: 4.25rem;
-    line-height: 5rem;
-  }
-  main .third #third-2 {
-    padding-top: 2rem;
-  }
-  main .third #third-2 #quote #content {
-    padding: 1rem;
-  }
-  main .third #third-2 #quote #content #content-1 {
-    font-size: 1.2rem;
-    line-height: 1.65rem;
-  }
-  main .third #third-3 .grid {
-    padding: 0 0 12vh 44vw;
-  }
+main .third #third-2 #third-2-2 form #i-1 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
-@media only screen and (max-width: 786px) {
-  main .first #hello {
-    left: -38vw;
-  }
-  main .first #hello h1 {
-    font-size: 5rem;
-  }
-  main .second #second-1 {
-    top: 146vh;
-  }
-  main .third #third-2 #quote #content {
-    padding: 1rem;
-  }
-  main .third #third-2 #quote #content #content-1 {
-    font-size: 1rem;
-    line-height: 1.65rem;
-  }
-  main .third #third-2 #quote #content #content-2 {
-    font-size: 1.5rem;
-  }
-  main .third #third-2 #quote #content #content-3 {
-    display: none;
-  }
-  main .third #third-3 .grid .facts p {
-    width: 30vw;
-  }
+main .third #third-2 #third-2-2 form #i-1 input {
+  width: 10rem;
 }
 
-@media only screen and (max-width: 540px) {
-  header #menu ul {
-    background-color: rgba(0, 0, 0, 0.15);
-  }
-  header #menu ul li {
-    padding: 0 2.5rem;
-  }
-  header #menu ul li a {
-    font-size: 1.25rem;
-  }
-  header #links {
-    top: 84%;
-  }
-  header #links img {
-    width: 1.75rem;
-  }
-  main .first #hello {
-    left: -45vw;
-  }
-  main .first #hello h1 {
-    font-size: 3.75rem;
-  }
-  main .first #welcome {
-    margin: 0;
-  }
-  main .first #welcome h2 {
-    font-size: 2rem;
-    padding: .5rem 0;
-    line-height: 2.5rem;
-  }
-  main .first #welcome p {
-    font-size: .75rem;
-    line-height: 1.25rem;
-  }
-  main .second #second-1 {
-    top: 136vh;
-  }
-  main .second #second-1 h1 {
-    font-size: 3.5rem;
-    line-height: 4rem;
-  }
-  main .second #second-2 .grid {
-    padding-bottom: 42vh;
-  }
-  main .second #second-2 .grid .website img {
-    height: 10vh;
-  }
-  main .second #second-2 .grid .website .webtitle {
-    font-size: 1rem;
-  }
-  main .second #second-2 .grid .website .webtitle span {
-    font-size: .75rem;
-  }
-  main .second #second-2 .grid #nextclient {
-    height: 10vh;
-  }
-  main .second #second-2 .grid #nextclient .title {
-    font-size: 1rem;
-  }
-  main .second #second-2 .grid #nextclient .title span {
-    font-size: .75rem;
-  }
-  main .third #third-1 {
-    bottom: 24vh;
-    left: -12vw;
-  }
-  main .third #third-1 h1 {
-    font-size: 3.25rem;
-    line-height: 3.75rem;
-  }
-  main .third #third-2 #quote .resize img {
-    width: 2rem;
-  }
-  main .third #third-2 #quote #openingquote {
-    padding-left: 2rem;
-  }
-  main .third #third-2 #quote #closingquote {
-    padding-right: 2rem;
-  }
-  main .third #third-2 #quote #content #content-1 {
-    display: none;
-  }
-  main .third #third-2 #quote #content #content-phone {
-    display: block;
-  }
-  main .third #third-2 #quote #content #content-2 {
-    font-size: 1.25rem;
-  }
-  main .third #third-3 .grid {
-    gap: .5rem;
-  }
-  main .third #third-3 .grid .facts p {
-    font-size: .75rem;
-    padding: .25rem;
-  }
+main .third #third-2 #third-2-2 form #i-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
-@media only screen and (max-width: 414px) {
-  header #menu ul li {
-    padding: 0 1.75rem;
-  }
-  main .first #hello {
-    left: 10vw;
-    top: 30vh;
-  }
-  main .first #hello h1 {
-    font-size: 4rem;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  main .first #hello h1 br {
-    display: block;
-  }
-  main .first #welcome {
-    width: 80vw;
-    padding-top: 36vh;
-    left: 50%;
-  }
-  main .first #welcome h2 {
-    font-size: 1.75rem;
-  }
-  main .first #welcome p {
-    font-size: .85rem;
-  }
-  main .first #illubg {
-    display: none;
-  }
-  main .first #illustration {
-    left: 52vw;
-    bottom: 54vh;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  main .first #illustration img {
-    height: 19vh;
-  }
-  main .second #second-1 {
-    top: 150vh;
-  }
-  main .third #third-1 {
-    left: -18vw;
-  }
-  main .third #third-2 {
-    padding-top: 6vh;
-  }
-  main .third #third-3 {
-    display: none;
-  }
+main .third #third-2 #third-2-2 form #i-2 input {
+  width: 14rem;
 }
 
-@media only screen and (max-width: 375px) {
-  header #menu ul li a {
-    font-size: 1rem;
-  }
-  header #links {
-    top: 86%;
-  }
-  header #links img {
-    width: 1.25rem;
-    margin: 1rem;
-  }
-  main .first #hello {
-    top: 34vh;
-  }
-  main .first #hello h1 {
-    font-size: 3.75rem;
-  }
-  main .first #illustration {
-    bottom: 46vh;
-  }
-  main .first #illustration img {
-    height: 22vh;
-  }
-  main .first #welcome {
-    padding-top: 38vh;
-  }
-  main .first #welcome p {
-    font-size: .75rem;
-  }
-  main .first #welcome h2 {
-    padding: .25rem 0;
-    line-height: 2rem;
-  }
-  main .second #second-1 h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  main .second #second-2 .grid {
-    gap: .5rem;
-  }
-  main .second #second-2 .grid .website img {
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%);
-    border: 2px white solid;
-  }
-  main .second #second-2 .grid .website .webtitle {
-    display: none;
-  }
-  main .second #second-2 .grid #nextclient .title {
-    font-size: .75rem;
-  }
-  main .second #second-2 .grid #nextclient .title span {
-    font-size: .7rem;
-  }
-  main .third #third-1 h1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
-  main .third #third-2 #quote #content #content-phone {
-    font-size: .85rem;
-  }
-  main .third #third-2 #quote #content #content-2 {
-    font-size: 1.25rem;
-  }
+main .third #third-2 #third-2-2 form #i-3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+main .third #third-2 #third-2-2 form #i-3 textarea {
+  width: 100%;
+  height: 14vh;
+  -webkit-filter: drop-shadow(0 0 6px #b477ff);
+          filter: drop-shadow(0 0 6px #b477ff);
+  border-radius: .5rem;
+  padding: .5rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+main .third #third-2 #third-2-2 form #i-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+main .third #third-2 #third-2-2 form #i-4 button {
+  padding: .35rem 1.65rem;
+  background-color: #4b007a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1px;
+  border-radius: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
