@@ -208,6 +208,7 @@ main {
                     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
                 }
                 #hashtag {
+                    margin-left: 20rem;
                     font-size: 1rem;
                     color: rgb(155, 155, 155);
                     text-decoration: line-through;
@@ -742,6 +743,9 @@ main {
                         font-size: 2.75rem;
                         line-height: 3.25rem;
                     }
+                    #hashtag {
+                        margin-left: 10rem;
+                    }
                 }
             }
         }
@@ -852,6 +856,7 @@ main {
                     }
                     #hashtag {
                         font-size: .7rem;
+                        margin-left: 4rem;
                     }
                 }
             }
@@ -898,14 +903,26 @@ main {
             #profilepic {
                 left: 78%;
             }
+            #welcome {
+                p {
+                    #h2 {
+                        font-size: 2.25rem;
+                        line-height: 2.5rem;
+                    }
+                    #hashtag {
+                        margin-left: 2.5rem;
+                    }
+                }
+            }
         }
         .second {
             #second-1 {
+                top: 164vh;
                 width: 68vw;
             }
             #second-2 {
                 .grid {
-                    padding: 0 6vw 30vh 6vw;
+                    padding: 0 6vw 24vh 6vw;
                     .website {
                         img {
                             height: 10vh;
@@ -931,7 +948,7 @@ main {
         }
         .third {
             #third-2 {
-                margin-top: 8vh;
+                margin-top: 4vh;
                 #third-2-1 {
                     #openingquote {
                         padding-left: 2rem;
