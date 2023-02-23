@@ -173,7 +173,6 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;
-  height: -webkit-fill-available;
 }
 
 body {
@@ -1197,8 +1196,8 @@ main .third #third-2 #third-2-2 form #i-4 button {
     left: 78%;
   }
   main .first #welcome p #h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 2.15rem;
+    line-height: 2.25rem;
   }
   main .first #welcome p #hashtag {
     margin-left: 2.5rem;
