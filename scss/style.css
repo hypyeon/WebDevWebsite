@@ -1270,4 +1270,35 @@ main .third #third-2 #third-2-2 form #i-4 button {
     font-size: .8rem;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  header #links ul li img {
+    width: 1rem;
+    margin: .5rem .75rem;
+  }
+  main .first #welcome p {
+    font-size: .8rem;
+  }
+  main .third #third-1 h1 {
+    font-size: 1.75rem;
+  }
+  main .third #third-2 #third-2-1 #content {
+    padding: 1rem .25rem;
+  }
+  main .third #third-2 #third-2-1 #content #content-phone {
+    font-size: .85rem;
+  }
+  main .third #third-2 #third-2-1 #content #content-2 {
+    font-size: 1.5rem;
+  }
+  main .third #third-2 #third-2-2 {
+    margin-top: 1vh;
+  }
+  main .third #third-2 #third-2-2 form {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 10vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
