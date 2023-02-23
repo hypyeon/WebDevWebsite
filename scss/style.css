@@ -172,11 +172,12 @@ html {
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100%;
+  height: -webkit-fill-available;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
+  height: -webkit-fill-available;
 }
 
 main {
