@@ -11,12 +11,11 @@ html {
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
     font-family: $quicksand;
-    height: -webkit-fill-available;
 }
 
 main {

@@ -172,12 +172,11 @@ html {
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
-  height: -webkit-fill-available;
 }
 
 main {
@@ -1194,6 +1193,9 @@ main .third #third-2 #third-2-2 form #i-4 button {
   }
   main .first #profilepic {
     left: 78%;
+  }
+  main .first #welcome {
+    padding-top: 38vh;
   }
   main .first #welcome p #h2 {
     font-size: 2.15rem;
