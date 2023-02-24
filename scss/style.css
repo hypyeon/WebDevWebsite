@@ -440,7 +440,7 @@ header #links ul {
 
 header #links ul img {
   position: relative;
-  width: 1.75rem;
+  width: 1.5rem;
   margin: 0.75rem;
   -webkit-filter: drop-shadow(1.5px 1.5px 0 #717171);
           filter: drop-shadow(1.5px 1.5px 0 #717171);
