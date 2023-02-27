@@ -47,6 +47,7 @@ header {
             img {
                 position: relative;
                 width: 1.5rem;
+                height: auto;
                 margin: 0.75rem;
                 filter: drop-shadow(1.5px 1.5px 0 rgba(113, 113, 113, 1));
                 bottom: 0;
@@ -172,6 +173,7 @@ main {
             margin-top: 5vh;
             source, img {
                 width: 12vw;
+                height: auto;
                 border-radius: 50%;
                 filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
             }
@@ -332,6 +334,7 @@ main {
                 .resize {
                     source, img {
                         width: 2.5rem;
+                        height: auto;
                     }
                 }
                 #openingquote {

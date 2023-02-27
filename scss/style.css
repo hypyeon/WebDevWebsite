@@ -441,6 +441,7 @@ header #links ul {
 header #links ul img {
   position: relative;
   width: 1.5rem;
+  height: auto;
   margin: 0.75rem;
   -webkit-filter: drop-shadow(1.5px 1.5px 0 #717171);
           filter: drop-shadow(1.5px 1.5px 0 #717171);
@@ -480,6 +481,7 @@ main .first #profilepic {
 
 main .first #profilepic source, main .first #profilepic img {
   width: 12vw;
+  height: auto;
   border-radius: 50%;
   -webkit-filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
           filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
@@ -712,6 +714,7 @@ main .third #third-2 #third-2-1 {
 
 main .third #third-2 #third-2-1 .resize source, main .third #third-2 #third-2-1 .resize img {
   width: 2.5rem;
+  height: auto;
 }
 
 main .third #third-2 #third-2-1 #openingquote {
