@@ -170,7 +170,7 @@ main {
             top: 50%;
             transform: translateY(-50%);
             margin-top: 5vh;
-            img {
+            source, img {
                 width: 12vw;
                 border-radius: 50%;
                 filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
@@ -232,9 +232,9 @@ main {
                 .website {
                     position: relative;
                     @include dropshadow-web;
-                    img {
+                    source, img {
                         filter: brightness(40%);
-                        border: 2px rgb(0, 65, 55) solid;
+                        
                         width: 100%;
                         height: 20vh;
                         object-fit: cover; 
@@ -256,7 +256,7 @@ main {
                     }
                 }       
                 .website:hover {
-                    img {
+                    source, img {
                         filter: brightness(100%);
                     }
                     .webtitle {
@@ -330,7 +330,7 @@ main {
                 padding: 0;
                 z-index: 2;
                 .resize {
-                    img {
+                    source, img {
                         width: 2.5rem;
                     }
                 }
@@ -528,7 +528,7 @@ main {
                 left: 50%;
                 transform: translateX(-50%);
                 top: 16vh;
-                img {
+                source, img {
                     width: 20vw;
                 }
             }
@@ -558,7 +558,7 @@ main {
                 .grid {
                     padding: 0 10vw 30vh 10vw;
                     .website {
-                        img {
+                        source, img {
                             height: 12vh;
                         }
                     }
@@ -792,7 +792,7 @@ main {
             #third-2 {
                 #third-2-1 {
                     .resize {
-                        img {
+                        source, img {
                             width: 1.5rem;
                         }
                     }
@@ -925,7 +925,7 @@ main {
                 .grid {
                     padding: 0 6vw 24vh 6vw;
                     .website {
-                        img {
+                        source, img {
                             height: 10vh;
                         }
                         .webtitle {

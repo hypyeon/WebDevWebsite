@@ -478,7 +478,7 @@ main .first #profilepic {
   margin-top: 5vh;
 }
 
-main .first #profilepic img {
+main .first #profilepic source, main .first #profilepic img {
   width: 12vw;
   border-radius: 50%;
   -webkit-filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
@@ -571,10 +571,9 @@ main .second #second-2 .grid .website {
           filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
 }
 
-main .second #second-2 .grid .website img {
+main .second #second-2 .grid .website source, main .second #second-2 .grid .website img {
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
-  border: 2px #004137 solid;
   width: 100%;
   height: 20vh;
   -o-object-fit: cover;
@@ -610,7 +609,7 @@ main .second #second-2 .grid .website .webtitle span {
   font-size: .95rem;
 }
 
-main .second #second-2 .grid .website:hover img {
+main .second #second-2 .grid .website:hover source, main .second #second-2 .grid .website:hover img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
 }
@@ -711,7 +710,7 @@ main .third #third-2 #third-2-1 {
   z-index: 2;
 }
 
-main .third #third-2 #third-2-1 .resize img {
+main .third #third-2 #third-2-1 .resize source, main .third #third-2 #third-2-1 .resize img {
   width: 2.5rem;
 }
 
@@ -928,7 +927,7 @@ main .third #third-2 #third-2-2 form #i-4 button {
             transform: translateX(-50%);
     top: 16vh;
   }
-  main .first #profilepic img {
+  main .first #profilepic source, main .first #profilepic img {
     width: 20vw;
   }
   main .first #welcome {
@@ -957,7 +956,7 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .second #second-2 .grid {
     padding: 0 10vw 30vh 10vw;
   }
-  main .second #second-2 .grid .website img {
+  main .second #second-2 .grid .website source, main .second #second-2 .grid .website img {
     height: 12vh;
   }
   main .second #second-2 .grid #nextclient {
@@ -1116,7 +1115,7 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .third #third-1 h1 #smooth {
     font-size: 3.25rem;
   }
-  main .third #third-2 #third-2-1 .resize img {
+  main .third #third-2 #third-2-1 .resize source, main .third #third-2 #third-2-1 .resize img {
     width: 1.5rem;
   }
   main .third #third-2 #third-2-1 #content {
@@ -1211,7 +1210,7 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .second #second-2 .grid {
     padding: 0 6vw 24vh 6vw;
   }
-  main .second #second-2 .grid .website img {
+  main .second #second-2 .grid .website source, main .second #second-2 .grid .website img {
     height: 10vh;
   }
   main .second #second-2 .grid .website .webtitle {
