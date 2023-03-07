@@ -286,108 +286,12 @@ main {
   line-height: 2.5;
 }
 
-header {
-  /*
-    #xa, #xb, #xc, #xd, #xe, #xf, #xg {
-        position: fixed;
-        z-index: 0;
-    }
-    #xa {
-        #ya {
-            background-color: #ffdcdf;
-            filter: blur(2.5rem);
-            padding: 16vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: -3vh;
-            left: -4vw;
-        }
-    }
-    #xd {
-        #yd {
-            background-color: #fff9d7;
-            filter: blur(2.5rem);
-            padding: 11vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 48vh;
-            left: 20vw;
-        }
-    }
-    #xb {
-        #yb {
-            background-color: #cefff3;
-            filter: blur(3rem);
-            padding: 18vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 8vh;
-            left: 70vw;
-        }
-    }
-    #xc {
-        #yc {
-            background-color: #ffe2fc;
-            filter: blur(3.5rem);
-            padding: 14vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 58vh;
-            left: 40vw;
-        }
-    }
-    #xe {
-        #ye {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 12vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 72vh;
-            left: -1vw;
-        }
-    }
-    #xf {
-        #yf {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 18vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: -14vh;
-            left: 34vw;
-        }
-    }
-    #xg {
-        #yg {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 13vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 58vh;
-            left: 66vw;
-        }
-    }
-    */
-}
-
 header #menu {
   z-index: 5;
   position: fixed;
 }
 
 header #menu ul {
-  width: 40vw;
-  margin-left: 60vw;
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,6 +301,9 @@ header #menu ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 60vw;
+  width: 40vw;
+  height: 10vh;
 }
 
 header #menu ul li a {
@@ -1143,9 +1050,12 @@ main .third #third-2 #third-2-2 form #i-4 button {
 }
 
 @media only screen and (max-width: 414px) {
+  header #menu {
+    display: none;
+  }
   main .first #hello {
     width: 80%;
-    top: 24vh;
+    top: 18vh;
   }
   main .first #hello h1 {
     text-align: left;
@@ -1156,10 +1066,10 @@ main .third #third-2 #third-2-2 form #i-4 button {
   }
   main .first #profilepic {
     left: 74%;
-    top: 22vh;
+    top: 16vh;
   }
   main .first #welcome {
-    padding-top: 30vh;
+    padding-top: 20vh;
     width: 90vw;
   }
   main .first #welcome p {
@@ -1175,6 +1085,12 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .first #welcome p #hashtag {
     font-size: .7rem;
     margin-left: 4rem;
+  }
+  main .second #second-2 .grid {
+    padding: 0 10vw 38vh 10vw;
+  }
+  main .third {
+    padding-top: 4vh;
   }
   main .third #third-2 #third-2-2 form {
     width: 80vw;
@@ -1197,7 +1113,7 @@ main .third #third-2 #third-2-2 form #i-4 button {
     left: 78%;
   }
   main .first #welcome {
-    padding-top: 38vh;
+    padding-top: 22vh;
   }
   main .first #welcome p #h2 {
     font-size: 2.15rem;
@@ -1207,11 +1123,11 @@ main .third #third-2 #third-2-2 form #i-4 button {
     margin-left: 2.5rem;
   }
   main .second #second-1 {
-    top: 164vh;
+    top: 158vh;
     width: 68vw;
   }
   main .second #second-2 .grid {
-    padding: 0 6vw 24vh 6vw;
+    padding: 0 6vw 32vh 6vw;
   }
   main .second #second-2 .grid .website source, main .second #second-2 .grid .website img {
     height: 10vh;
@@ -1231,8 +1147,11 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .second #second-2 .grid #nextclient .title span {
     font-size: .5rem;
   }
+  main .third #third-1 {
+    bottom: 18vh;
+  }
   main .third #third-2 {
-    margin-top: 4vh;
+    margin-top: 6vh;
   }
   main .third #third-2 #third-2-1 #openingquote {
     padding-left: 2rem;
@@ -1246,6 +1165,9 @@ main .third #third-2 #third-2-2 form #i-4 button {
   main .third #third-2 #third-2-1 #content #content-2 {
     font-size: 1.75rem;
     padding-top: .75rem;
+  }
+  main .third #third-2 #third-2-2 {
+    margin-top: 1.5rem;
   }
 }
 

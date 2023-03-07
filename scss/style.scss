@@ -7,12 +7,12 @@ header {
         z-index: 5;
         position: fixed;
         ul {
-            width: 40vw;
-            margin-left: 60vw;
-            height: 10vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            margin-left: 60vw;
+            width: 40vw;
+            height: 10vh;
             li {          
                 a {
                     font-family: $quicksand;
@@ -62,96 +62,6 @@ header {
             }
         }
     }
-    /*
-    #xa, #xb, #xc, #xd, #xe, #xf, #xg {
-        position: fixed;
-        z-index: 0;
-    }
-    #xa {
-        #ya {
-            background-color: #ffdcdf;
-            filter: blur(2.5rem);
-            padding: 16vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: -3vh;
-            left: -4vw;
-        }
-    }
-    #xd {
-        #yd {
-            background-color: #fff9d7;
-            filter: blur(2.5rem);
-            padding: 11vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 48vh;
-            left: 20vw;
-        }
-    }
-    #xb {
-        #yb {
-            background-color: #cefff3;
-            filter: blur(3rem);
-            padding: 18vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 8vh;
-            left: 70vw;
-        }
-    }
-    #xc {
-        #yc {
-            background-color: #ffe2fc;
-            filter: blur(3.5rem);
-            padding: 14vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 58vh;
-            left: 40vw;
-        }
-    }
-    #xe {
-        #ye {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 12vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 72vh;
-            left: -1vw;
-        }
-    }
-    #xf {
-        #yf {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 18vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: -14vh;
-            left: 34vw;
-        }
-    }
-    #xg {
-        #yg {
-            background-color: #fff1e2;
-            filter: blur(3.5rem);
-            padding: 13vw;
-            width: fit-content;
-            border-radius: 50%;
-            position: fixed;
-            top: 58vh;
-            left: 66vw;
-        }
-    }
-    */
 }
 main {        
     .first {
@@ -828,11 +738,16 @@ main {
     }
 }
 @media only screen and (max-width: 414px) {
+    header {
+        #menu {
+            display: none;
+        }
+    }
     main {
         .first {
             #hello {
                 width: 80%;
-                top: 24vh;
+                top: 18vh;
                 h1 {
                     text-align: left;
                     font-size: 2.5rem;
@@ -843,10 +758,10 @@ main {
             }
             #profilepic {
                 left: 74%;
-                top: 22vh;
+                top: 16vh;
             }
             #welcome {
-                padding-top: 30vh;
+                padding-top: 20vh;
                 width: 90vw;
                 p {
                     font-size: .85rem;
@@ -864,7 +779,15 @@ main {
                 }
             }
         }
+        .second {
+            #second-2 {
+                .grid {
+                    padding: 0 10vw 38vh 10vw;
+                }
+            }
+        }
         .third {
+            padding-top: 4vh;
             #third-2 {
                 #third-2-2 {
                     form {
@@ -907,7 +830,7 @@ main {
                 left: 78%;
             }
             #welcome {
-                padding-top: 38vh;
+                padding-top: 22vh;
                 p {
                     #h2 {
                         font-size: 2.15rem;
@@ -921,12 +844,12 @@ main {
         }
         .second {
             #second-1 {
-                top: 164vh;
+                top: 158vh;
                 width: 68vw;
             }
             #second-2 {
                 .grid {
-                    padding: 0 6vw 24vh 6vw;
+                    padding: 0 6vw 32vh 6vw;
                     .website {
                         source, img {
                             height: 10vh;
@@ -951,8 +874,11 @@ main {
             }
         }
         .third {
+            #third-1 {
+                bottom: 18vh;
+            }
             #third-2 {
-                margin-top: 4vh;
+                margin-top: 6vh;
                 #third-2-1 {
                     #openingquote {
                         padding-left: 2rem;
@@ -967,6 +893,9 @@ main {
                             padding-top: .75rem;
                         }
                     }
+                }
+                #third-2-2 {
+                    margin-top: 1.5rem;
                 }
             }
         }
