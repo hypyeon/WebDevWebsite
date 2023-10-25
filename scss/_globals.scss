@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: $quicksand;
+    font-family: $spacemono;
 }
 
 main {
@@ -24,7 +24,7 @@ main {
     height: 300vh;
 }
 
-.first, .second, .third {
+.section {
     scroll-snap-align: center; 
     height: 100vh;
     width: 100vw;
@@ -32,11 +32,9 @@ main {
 }
 
 .walltext {
-    position: absolute;
     h1 {
         font-family: $urbanist;
         font-size: 4rem;
-        transform: rotate(-90deg);
         @include fontGrad2;
     }
 }
@@ -45,13 +43,11 @@ main {
     display: flex;
 }
 
-.flex-dir-row {
-    display: flex;
+.row {
     flex-direction: row;
 }
 
-.flex-dir-col {
-    display: flex;
+.col {
     flex-direction: column;
 }
 

@@ -3,6 +3,7 @@
 @import './globals';
 
 header {
+    display: none;
     #menu {
         z-index: 5;
         position: fixed;
@@ -65,10 +66,16 @@ header {
 }
 main {        
     .first {
+        gap: 4.5rem;
         #hello {
-            left: -17vw;
-            top: 50%;
+            transform: rotate(-90deg);
+            width: 100vw;
+            text-align: center;
+            left: -42%;
+            position: absolute;
             h1 {
+                justify-content: start;
+                width: 100%;
                 br {
                     display: none;
                 }
@@ -76,11 +83,6 @@ main {
         }
         #profilepic {
             z-index: 2;
-            position: absolute;
-            left: 21vw;
-            top: 50%;
-            transform: translateY(-50%);
-            margin-top: 5vh;
             source, img {
                 width: 12vw;
                 height: auto;
@@ -89,43 +91,27 @@ main {
             }
         }
         #welcome {    
-            padding-top: 10vh;
-            left: 60%;
-            transform: translateX(-45%);
-            width: 50vw;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            p {
-                color: rgba(255, 255, 255, 0.75);
-                font-size: 1.25rem;
-                line-height: 1.85rem;
-                padding: .5rem 0;
-                #h2 {
-                    font-family: $squarepeg;
-                    font-size: 4.75rem;
-                    font-weight: 700;
-                    line-height: 5rem;
-                    @include fontGrad3;
-                    padding-bottom: 3rem;
-                    filter: drop-shadow(0 0 1px rgb(98, 255, 255));
-                }
-                #highlight {
-                    letter-spacing: 1px;
-                    font-family: $phudu;
-                    font-weight: 600;
-                    @include fontGrad;
-                    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
-                }
-                #hashtag {
-                    margin-left: 20rem;
-                    font-size: 1rem;
-                    color: rgb(155, 155, 155);
-                    text-decoration: line-through;
-                }
-            }    
+            width: fit-content;
+            gap: .5rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.25rem;
+            line-height: 1.85rem;
+            padding: .5rem 0;
+            #h2 {
+                font-family: $squarepeg;
+                font-size: 4.75rem;
+                font-weight: 700;
+                line-height: 5rem;
+                @include fontGrad3;
+                filter: drop-shadow(0 0 1px rgb(98, 255, 255));
+            }
+            #highlight {
+                letter-spacing: 1px;
+                //font-family: $phudu;
+                font-weight: 600;
+                @include fontGrad;
+                filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+            }
         }
     }
     .second {
