@@ -89,3 +89,9 @@ main {
 .lineheight {
     line-height: 2.5;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 428px) {
+    .walltext, #webdev, #quote {
+        display: none;
+    }
+}

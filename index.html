@@ -7,7 +7,7 @@
 
     <title>Hayeong Pyeon</title>
 
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/style.css" media="print" onload="this.media='all'" defer>
     <link rel="preload" as="style" href="./scss/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -58,7 +58,7 @@
             data-aos-duration="1800"
             data-aos-mobile="false"
             data-aos-once="true">
-                <p class="intro">
+                <p class="intro" id="webdev">
                     I'm a web dev and designer based in <span id="highlight">Portland OR</span>. <br>
                     I come up with color palette, layout, and <br>
                     animation effects suitable for diverse website needs. 
@@ -77,6 +77,8 @@
                     <div>SCSS</div>
                     <div>Bootstrap</div>
                     <div>Figma</div>
+                    <div class="mobile-only">한국어</div>
+                    <div class="mobile-only">中文</div>
                 </div>
                 <p class="intro" id="nanum">한국어 상담도 가능합니다. 可以用中文咨询。</p>
             </div>
