@@ -1,37 +1,7 @@
 @import './variables';
-@import './animations';
 @import './globals';
 
 header {
-    display: none;
-    #menu {
-        z-index: 5;
-        position: fixed;
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-left: 60vw;
-            width: 40vw;
-            height: 10vh;
-            li {          
-                a {
-                    font-family: $quicksand;
-                    font-size: 1.45rem;
-                    font-weight: 700;
-                    letter-spacing: 3px;
-
-                    color: rgba(255, 255, 255, 0.5);
-                    filter: drop-shadow(2px 0 0 rgba(0, 0, 0, 0.35));
-                    transition: all ease-out .4s;
-                }
-                a:hover {
-                    color: white;
-                    filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.75));
-                }
-            }
-        }
-    }
     #links {
         position: fixed;
         right: 2.5vw;
@@ -66,38 +36,19 @@ header {
 }
 main {        
     .first {
-        gap: 4.5rem;
-        #hello {
-            transform: rotate(-90deg);
-            width: 100vw;
-            text-align: center;
-            left: -42%;
-            position: absolute;
-            h1 {
-                justify-content: start;
-                width: 100%;
-                br {
-                    display: none;
+        gap: 3rem;
+        #profile {
+            gap: 3rem;
+            #pic {
+                z-index: 2;
+                source, img {
+                    width: 10vw;
+                    height: auto;
+                    border-radius: 50%;
+                    filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
                 }
             }
-        }
-        #profilepic {
-            z-index: 2;
-            source, img {
-                width: 12vw;
-                height: auto;
-                border-radius: 50%;
-                filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
-            }
-        }
-        #welcome {    
-            width: fit-content;
-            gap: .5rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 1.25rem;
-            line-height: 1.85rem;
-            padding: .5rem 0;
-            #h2 {
+            #hayeong {
                 font-family: $squarepeg;
                 font-size: 4.75rem;
                 font-weight: 700;
@@ -105,25 +56,51 @@ main {
                 @include fontGrad3;
                 filter: drop-shadow(0 0 1px rgb(98, 255, 255));
             }
+
+        }
+        #description {
+            .intro {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 1.35rem;
+                line-height: 2.25rem;
+                text-align: center;
+            }
+            #skills {
+                gap: .5rem;
+                padding: 2rem 0 1rem 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 54vw;
+                div {
+                    padding: .25rem .75rem;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border: 3px solid rgba(0, 160, 160, 0.8);
+                    border-radius: 25px;
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 1rem;
+                    letter-spacing: .5px;
+
+                }
+            }
             #highlight {
                 letter-spacing: 1px;
-                //font-family: $phudu;
                 font-weight: 600;
                 @include fontGrad;
                 filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+            }    
+            #nanum {
+                color: rgba(195, 195, 195, 0.8);
+                font-family: $nanum;
+                letter-spacing: .5px;
+                font-size: 1rem;
             }
         }
     }
     .second {
-        #second-1 {
-            top: 140vh;
-            left: -.5rem;
-        }
-        #second-2 {
+        #projects {
             z-index: 1;
             .grid {
                 width: 100%;
-                padding: 10vh 12vw 0 34vw;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2vw;
                 justify-content: center;            
@@ -131,8 +108,7 @@ main {
                     position: relative;
                     @include dropshadow-web;
                     source, img {
-                        filter: brightness(40%);
-                        
+                        filter: brightness(35%);
                         width: 100%;
                         height: 20vh;
                         object-fit: cover; 
@@ -144,9 +120,8 @@ main {
                         width: 100%;
                         text-align: center;
                         color: white;
-                        font-weight: 600;
-                        font-size: 1.3rem;
-                        letter-spacing: 2.75px;
+                        font-size: 1.35rem;
+                        letter-spacing: 2.5px;
                         transition: .3s linear;
                         span {
                             font-size: .95rem;
@@ -208,80 +183,62 @@ main {
         }
     }
     .third {
-        position: relative;
-        padding-top: 10vh;
-        width: fit-content;
-        #third-1 {
-            left: -5vw;
-            bottom: 20vh;
+        .walltext {
+            padding-left: 2rem;
             h1 {
+                font-size: 3rem;
+                line-height: 4rem;
                 #smooth {
                     font-family: $squarepeg;
-                    font-size: 5rem;
+                    font-size: 3.5rem;
+                    line-height: 4rem;
                 }
             }
         }
-        #third-2 {
-            margin: 8vh 0 0 30vw;
-            align-items: center;
-            #third-2-1 {
+        #for-future-clients {
+            gap: 3rem;
+            #quote {
                 padding: 0;
                 z-index: 2;
                 .resize {
                     source, img {
-                        width: 2.5rem;
+                        width: 2.25rem;
                         height: auto;
                     }
                 }
-                #openingquote {
+                #opening {
                     padding-top: 10px;
-                    padding-left: 80px;
                     @include dropshadow2;
                 }
-                #closingquote {
-                    padding-right: 80px;
+                #closing {
                     padding-bottom: 10px;
                     align-self: flex-end;
                     @include dropshadow2;
                 }
                 #content {
                     align-self: center;
-                    padding: 2rem 3rem;
-                    border-radius: 45px;
-                    #content-1 {
-                        font-size: 1.25rem;
-                        font-weight: 400;
-                        line-height: 2rem;
-                        color: #ffffff;
-                        span {
-                            font-size: 1rem;
-                            font-weight: 300;
-                            color: rgba(255, 255, 255, 0.6);
-                        }
-                    }
-                    #content-phone {
-                        display: none;
-                    }
-                    #content-2 {
-                        font-size: 3.25rem;
+                    padding: 2rem .5rem;
+                    h4 {
+                        font-size: 4.25rem;
                         font-family: $squarepeg;
-                        color: #dedede;
+                        color: rgba(255, 255, 255, 0.9);
+                        letter-spacing: 1px;
                         @include dropshadow-web;
                     }
-                    #content-3 {
+                    p {
+                        padding: .25rem;
                         font-size: 0.9rem;
-                        color: rgb(146, 146, 146);
-                        font-weight: 400;
-                        text-decoration: line-through;
+                        letter-spacing: -.5px;
+                        color: rgba(190, 190, 190, 0.8);
+                        text-align: end;
                     }
                 }
             }
-            #third-2-2 {
-                margin-top: 2.5rem;
-                font-family: $phudu;
+            #form {
                 color: white;
                 form {
                     width: 40vw;
+                    margin: 0 auto;
                     display: grid;
                     gap: 1rem;
                     text-align: center;
@@ -314,11 +271,10 @@ main {
                         grid-row: 2;
                         textarea {
                             width: 100%;
-                            height: 14vh;
+                            height: 24vh;
                             @include dropshadow2;
                             border-radius: .5rem;   
-                            padding: .5rem; 
-                            font-family: $quicksand;
+                            padding: 1rem; 
                         }
                     }
                     #i-4 {
@@ -327,10 +283,9 @@ main {
                         button {
                             padding: .35rem 1.65rem;
                             background-color: rgb(75, 0, 122);
-                            color: #ffffff;
-                            font-size: 1rem;
-                            font-family: $urbanist;
-                            letter-spacing: 1px;
+                            color: rgb(255, 255, 255);
+                            font-size: 1.25rem;
+                            letter-spacing: .5px;
                             border-radius: .5rem;   
                         }
                     }

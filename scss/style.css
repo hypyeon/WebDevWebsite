@@ -3,153 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/*#pfpicbg {
-    animation: avatar 2s ease infinite alternate;
-}
-@keyframes avatar {
-    100% {
-      transform: translateX(1vw);
-    }
-}*/
-/*
-.balls {
-#xa {
-    animation: xa 3s linear infinite alternate;
-}
-#ya {
-    animation: ya 2.5s linear infinite alternate;
-}
-@keyframes xa {
-    100% {
-      transform: translateX(5vw);
-    }
-}
-@keyframes ya {
-    100% {
-      transform: translateY(8vh);
-    }
-} 
-#xd {
-    animation: xd 2s linear infinite alternate;
-}
-#yd {
-    animation: yd 3s linear infinite alternate;
-}
-@keyframes xd {
-    100% {
-      transform: translateX(-4vw);
-    }
-}
-@keyframes yd {
-    100% {
-      transform: translateY(6vh);
-    }
-} 
-
-#xb {
-    animation: xb 4s linear infinite alternate;
-}
-#yb {
-    animation: yb 2.5s linear infinite alternate;
-}
-@keyframes xb {
-    100% {
-      transform: translateX(4vw);
-    }
-}
-@keyframes yb {
-    100% {
-      transform: translateY(-8vh);
-    }
-} 
-
-#xc {
-    animation: xc 3s linear infinite alternate;
-}
-#yc {
-    animation: yc 5s linear infinite alternate;
-}
-@keyframes xc {
-    100% {
-      transform: translateX(-4vw);
-    }
-}
-@keyframes yc {
-    100% {
-      transform: translateY(7vh);
-    }
-} 
-
-#xe {
-    animation: xe 3s linear infinite alternate;
-}
-#ye {
-    animation: ye 5s linear infinite alternate;
-}
-@keyframes xe {
-    100% {
-      transform: translateX(-4vw);
-    }
-}
-@keyframes ye {
-    100% {
-      transform: translateY(7vh);
-    }
-} 
-
-#xf {
-    animation: xf 3s linear infinite alternate;
-}
-#yf {
-    animation: yf 4.5s linear infinite alternate;
-}
-@keyframes xf {
-    100% {
-      transform: translateX(6vw);
-    }
-}
-@keyframes yf {
-    100% {
-      transform: translateY(5vh);
-    }
-} 
-
-#xg {
-    animation: xg 4s linear infinite alternate;
-}
-#yg {
-    animation: yg 3.5s linear infinite alternate;
-}
-@keyframes xg {
-    100% {
-      transform: translateX(6vw);
-    }
-}
-@keyframes yg {
-    100% {
-      transform: translateY(5vh);
-    }
-} 
-
-@mixin gradientBg {
-    position: fixed;
-    animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(60deg, rgb(241, 186, 255), #fff5cf, rgb(173, 255, 247));
-    bottom: 0;
-    top: 0;
-    left: -50%;
-    right: -50%;
-    z-index: -1;
-    opacity: 0.85;
-}
-
-}
-*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -182,8 +42,8 @@ main {
 
 .walltext h1 {
   font-family: "Urbanist", sans-serif;
-  font-size: 4rem;
-  background-image: linear-gradient(135deg, rgba(188, 188, 188, 0.025), rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.05));
+  font-size: 3.5rem;
+  background-image: linear-gradient(135deg, rgba(135, 135, 135, 0.001), rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.05));
   -webkit-background-clip: text;
   color: transparent;
   padding: 0 0.25rem;
@@ -245,34 +105,6 @@ main {
   line-height: 2.5;
 }
 
-header {
-  display: none;
-}
-header #menu {
-  z-index: 5;
-  position: fixed;
-}
-header #menu ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 60vw;
-  width: 40vw;
-  height: 10vh;
-}
-header #menu ul li a {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.5);
-  filter: drop-shadow(2px 0 0 rgba(0, 0, 0, 0.35));
-  transition: all ease-out 0.4s;
-}
-header #menu ul li a:hover {
-  color: white;
-  filter: drop-shadow(0 0 4px rgba(0, 255, 204, 0.75));
-}
 header #links {
   position: fixed;
   right: 2.5vw;
@@ -307,41 +139,21 @@ header #links ul img:active {
 }
 
 main .first {
-  gap: 4.5rem;
+  gap: 3rem;
 }
-main .first #hello {
-  transform: rotate(-90deg);
-  width: 100vw;
-  text-align: center;
-  left: -42%;
-  position: absolute;
+main .first #profile {
+  gap: 3rem;
 }
-main .first #hello h1 {
-  justify-content: start;
-  width: 100%;
-}
-main .first #hello h1 br {
-  display: none;
-}
-main .first #profilepic {
+main .first #profile #pic {
   z-index: 2;
 }
-main .first #profilepic source, main .first #profilepic img {
-  width: 12vw;
+main .first #profile #pic source, main .first #profile #pic img {
+  width: 10vw;
   height: auto;
   border-radius: 50%;
   filter: drop-shadow(0 0 12px rgba(218, 255, 251, 0.75));
 }
-main .first #welcome {
-  width: -moz-fit-content;
-  width: fit-content;
-  gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.25rem;
-  line-height: 1.85rem;
-  padding: 0.5rem 0;
-}
-main .first #welcome #h2 {
+main .first #profile #hayeong {
   font-family: "Square Peg", cursive;
   font-size: 4.75rem;
   font-weight: 700;
@@ -352,7 +164,29 @@ main .first #welcome #h2 {
   padding: 0 0.25rem;
   filter: drop-shadow(0 0 1px rgb(98, 255, 255));
 }
-main .first #welcome #highlight {
+main .first #description .intro {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.35rem;
+  line-height: 2.25rem;
+  text-align: center;
+}
+main .first #description #skills {
+  gap: 0.5rem;
+  padding: 2rem 0 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 54vw;
+}
+main .first #description #skills div {
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(0, 160, 160, 0.8);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+main .first #description #highlight {
   letter-spacing: 1px;
   font-weight: 600;
   background-image: linear-gradient(15deg, rgba(32, 255, 233, 0.6), rgba(174, 34, 255, 0.6));
@@ -361,33 +195,34 @@ main .first #welcome #highlight {
   padding: 0 0.25rem;
   filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
-main .second #second-1 {
-  top: 140vh;
-  left: -0.5rem;
+main .first #description #nanum {
+  color: rgba(195, 195, 195, 0.8);
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
 }
-main .second #second-2 {
+main .second #projects {
   z-index: 1;
 }
-main .second #second-2 .grid {
+main .second #projects .grid {
   width: 100%;
-  padding: 10vh 12vw 0 34vw;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
   justify-content: center;
 }
-main .second #second-2 .grid .website {
+main .second #projects .grid .website {
   position: relative;
   filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
 }
-main .second #second-2 .grid .website source, main .second #second-2 .grid .website img {
-  filter: brightness(40%);
+main .second #projects .grid .website source, main .second #projects .grid .website img {
+  filter: brightness(35%);
   width: 100%;
   height: 20vh;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s linear;
 }
-main .second #second-2 .grid .website .webtitle {
+main .second #projects .grid .website .webtitle {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -398,24 +233,23 @@ main .second #second-2 .grid .website .webtitle {
   width: 100%;
   text-align: center;
   color: white;
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 2.75px;
+  font-size: 1.35rem;
+  letter-spacing: 2.5px;
   transition: 0.3s linear;
 }
-main .second #second-2 .grid .website .webtitle:visited {
+main .second #projects .grid .website .webtitle:visited {
   text-decoration: none;
 }
-main .second #second-2 .grid .website .webtitle span {
+main .second #projects .grid .website .webtitle span {
   font-size: 0.95rem;
 }
-main .second #second-2 .grid .website:hover source, main .second #second-2 .grid .website:hover img {
+main .second #projects .grid .website:hover source, main .second #projects .grid .website:hover img {
   filter: brightness(100%);
 }
-main .second #second-2 .grid .website:hover .webtitle {
+main .second #projects .grid .website:hover .webtitle {
   color: transparent;
 }
-main .second #second-2 .grid #nextclient {
+main .second #projects .grid #nextclient {
   position: relative;
   width: 100%;
   height: 20vh;
@@ -423,7 +257,7 @@ main .second #second-2 .grid #nextclient {
   background-color: black;
   transition: 0.3s linear;
 }
-main .second #second-2 .grid #nextclient .title {
+main .second #projects .grid #nextclient .title {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -438,158 +272,137 @@ main .second #second-2 .grid #nextclient .title {
   font-size: 1.3rem;
   letter-spacing: 2.75px;
 }
-main .second #second-2 .grid #nextclient .title:visited {
+main .second #projects .grid #nextclient .title:visited {
   text-decoration: none;
 }
-main .second #second-2 .grid #nextclient .title span {
+main .second #projects .grid #nextclient .title span {
   font-size: 0.95rem;
 }
-main .second #second-2 .grid #nextclient #hover {
+main .second #projects .grid #nextclient #hover {
   display: none;
 }
-main .second #second-2 .grid #nextclient #default {
+main .second #projects .grid #nextclient #default {
   display: block;
 }
-main .second #second-2 .grid #nextclient:hover {
+main .second #projects .grid #nextclient:hover {
   cursor: pointer;
   background-color: rgb(222, 222, 222);
 }
-main .second #second-2 .grid #nextclient:hover #hover {
+main .second #projects .grid #nextclient:hover #hover {
   display: block;
   color: black;
 }
-main .second #second-2 .grid #nextclient:hover #hover span {
+main .second #projects .grid #nextclient:hover #hover span {
   color: rgb(174, 34, 255);
 }
-main .second #second-2 .grid #nextclient:hover #default {
+main .second #projects .grid #nextclient:hover #default {
   display: none;
 }
-main .third {
-  position: relative;
-  padding-top: 10vh;
-  width: -moz-fit-content;
-  width: fit-content;
+main .third .walltext {
+  padding-left: 2rem;
 }
-main .third #third-1 {
-  left: -5vw;
-  bottom: 20vh;
+main .third .walltext h1 {
+  font-size: 3rem;
+  line-height: 4rem;
 }
-main .third #third-1 h1 #smooth {
+main .third .walltext h1 #smooth {
   font-family: "Square Peg", cursive;
-  font-size: 5rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
-main .third #third-2 {
-  margin: 8vh 0 0 30vw;
-  align-items: center;
+main .third #for-future-clients {
+  gap: 3rem;
 }
-main .third #third-2 #third-2-1 {
+main .third #for-future-clients #quote {
   padding: 0;
   z-index: 2;
 }
-main .third #third-2 #third-2-1 .resize source, main .third #third-2 #third-2-1 .resize img {
-  width: 2.5rem;
+main .third #for-future-clients #quote .resize source, main .third #for-future-clients #quote .resize img {
+  width: 2.25rem;
   height: auto;
 }
-main .third #third-2 #third-2-1 #openingquote {
+main .third #for-future-clients #quote #opening {
   padding-top: 10px;
-  padding-left: 80px;
   filter: drop-shadow(0 0 6px rgb(180, 119, 255));
 }
-main .third #third-2 #third-2-1 #closingquote {
-  padding-right: 80px;
+main .third #for-future-clients #quote #closing {
   padding-bottom: 10px;
   align-self: flex-end;
   filter: drop-shadow(0 0 6px rgb(180, 119, 255));
 }
-main .third #third-2 #third-2-1 #content {
+main .third #for-future-clients #quote #content {
   align-self: center;
-  padding: 2rem 3rem;
-  border-radius: 45px;
+  padding: 2rem 0.5rem;
 }
-main .third #third-2 #third-2-1 #content #content-1 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 2rem;
-  color: #ffffff;
-}
-main .third #third-2 #third-2-1 #content #content-1 span {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
-}
-main .third #third-2 #third-2-1 #content #content-phone {
-  display: none;
-}
-main .third #third-2 #third-2-1 #content #content-2 {
-  font-size: 3.25rem;
+main .third #for-future-clients #quote #content h4 {
+  font-size: 4.25rem;
   font-family: "Square Peg", cursive;
-  color: #dedede;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
   filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
 }
-main .third #third-2 #third-2-1 #content #content-3 {
+main .third #for-future-clients #quote #content p {
+  padding: 0.25rem;
   font-size: 0.9rem;
-  color: rgb(146, 146, 146);
-  font-weight: 400;
-  text-decoration: line-through;
+  letter-spacing: -0.5px;
+  color: rgba(190, 190, 190, 0.8);
+  text-align: end;
 }
-main .third #third-2 #third-2-2 {
-  margin-top: 2.5rem;
-  font-family: "Phudu", cursive;
+main .third #for-future-clients #form {
   color: white;
 }
-main .third #third-2 #third-2-2 form {
+main .third #for-future-clients #form form {
   width: 40vw;
+  margin: 0 auto;
   display: grid;
   gap: 1rem;
   text-align: center;
 }
-main .third #third-2 #third-2-2 form label {
+main .third #for-future-clients #form form label {
   font-size: 1rem;
 }
-main .third #third-2 #third-2-2 form input {
+main .third #for-future-clients #form form input {
   padding: 0 0.25rem;
   height: 2rem;
   filter: drop-shadow(0 0 6px rgb(180, 119, 255));
   border-radius: 0.5rem;
   font-family: "Quicksand", sans-serif;
 }
-main .third #third-2 #third-2-2 form #i-1 {
+main .third #for-future-clients #form form #i-1 {
   grid-column: 1;
   grid-row: 1;
 }
-main .third #third-2 #third-2-2 form #i-1 input {
+main .third #for-future-clients #form form #i-1 input {
   width: 10rem;
 }
-main .third #third-2 #third-2-2 form #i-2 {
+main .third #for-future-clients #form form #i-2 {
   grid-column: 2/span 2;
   grid-row: 1;
 }
-main .third #third-2 #third-2-2 form #i-2 input {
+main .third #for-future-clients #form form #i-2 input {
   width: 14rem;
 }
-main .third #third-2 #third-2-2 form #i-3 {
+main .third #for-future-clients #form form #i-3 {
   grid-column: 1/span 3;
   grid-row: 2;
 }
-main .third #third-2 #third-2-2 form #i-3 textarea {
+main .third #for-future-clients #form form #i-3 textarea {
   width: 100%;
-  height: 14vh;
+  height: 24vh;
   filter: drop-shadow(0 0 6px rgb(180, 119, 255));
   border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-family: "Quicksand", sans-serif;
+  padding: 1rem;
 }
-main .third #third-2 #third-2-2 form #i-4 {
+main .third #for-future-clients #form form #i-4 {
   grid-column: 1/span 3;
   grid-row: 3;
 }
-main .third #third-2 #third-2-2 form #i-4 button {
+main .third #for-future-clients #form form #i-4 button {
   padding: 0.35rem 1.65rem;
   background-color: rgb(75, 0, 122);
-  color: #ffffff;
-  font-size: 1rem;
-  font-family: "Urbanist", sans-serif;
-  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
   border-radius: 0.5rem;
 }
 
