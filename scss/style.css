@@ -172,7 +172,7 @@ main .first #profile #hayeong {
 }
 main .first #description .intro {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   line-height: 2.25rem;
   text-align: center;
 }
@@ -257,55 +257,6 @@ main .second #projects .grid .website:hover source, main .second #projects .grid
 }
 main .second #projects .grid .website:hover .webtitle {
   color: transparent;
-}
-main .second #projects .grid #nextclient {
-  position: relative;
-  width: 100%;
-  height: 20vh;
-  filter: drop-shadow(0 0 6px rgba(119, 255, 235, 0.8));
-  background-color: black;
-  transition: 0.3s linear;
-}
-main .second #projects .grid #nextclient .title {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 2.75px;
-}
-main .second #projects .grid #nextclient .title:visited {
-  text-decoration: none;
-}
-main .second #projects .grid #nextclient .title span {
-  font-size: 0.95rem;
-}
-main .second #projects .grid #nextclient #hover {
-  display: none;
-}
-main .second #projects .grid #nextclient #default {
-  display: block;
-}
-main .second #projects .grid #nextclient:hover {
-  cursor: pointer;
-  background-color: rgb(222, 222, 222);
-}
-main .second #projects .grid #nextclient:hover #hover {
-  display: block;
-  color: black;
-}
-main .second #projects .grid #nextclient:hover #hover span {
-  color: rgb(174, 34, 255);
-}
-main .second #projects .grid #nextclient:hover #default {
-  display: none;
 }
 main .third .walltext {
   padding-left: 2rem;
@@ -495,14 +446,6 @@ main .third #for-future-clients #form form #i-4 button {
     font-size: 0.75rem;
     letter-spacing: 0.5px;
   }
-  main .second #projects .grid #nextclient .title {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-  }
-  main .second #projects .grid #nextclient .title span {
-    display: none;
-  }
   main .third .walltext {
     padding: 0;
   }
@@ -579,10 +522,6 @@ main .third #for-future-clients #form form #i-4 button {
   main .second #projects .grid .website .webtitle {
     font-size: 1.5rem;
   }
-  main .second #projects .grid #nextclient .title {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
   main .third #for-future-clients #quote #content h4 {
     font-size: 4.5rem;
   }
@@ -625,10 +564,6 @@ main .third #for-future-clients #form form #i-4 button {
   }
   main .second #projects .grid .website .webtitle {
     font-size: 1.5rem;
-  }
-  main .second #projects .grid #nextclient .title {
-    font-size: 1.5rem;
-    font-weight: 400;
   }
   main .third #for-future-clients #quote #content h4 {
     font-size: 3.5rem;
@@ -676,14 +611,6 @@ main .third #for-future-clients #form form #i-4 button {
   }
   main .second #projects .grid .website .webtitle {
     font-size: 1rem;
-  }
-  main .second #projects .grid #nextclient .title {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-  }
-  main .second #projects .grid #nextclient .title span {
-    display: none;
   }
   main .third #for-future-clients {
     gap: 2rem;
@@ -750,9 +677,6 @@ main .third #for-future-clients #form form #i-4 button {
     font-size: 1.1rem;
     letter-spacing: 0.25px;
   }
-  main .second #projects .grid #previewcard, main .second #projects .grid #nextclient {
-    display: none;
-  }
   main .third #for-future-clients {
     gap: 1rem;
   }
@@ -779,25 +703,38 @@ main .third #for-future-clients #form form #i-4 button {
   }
 }
 @media only screen and (min-width: 390px) and (max-width: 412px) {
+  main .first {
+    gap: 2rem;
+  }
+  main .first #profile {
+    gap: 2rem;
+  }
   main .first #profile #pic source, main .first #profile #pic img {
     width: 26vw;
   }
   main .first #profile #hayeong {
-    font-size: 3rem;
-    line-height: 3.25rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
   }
   main .first #description #skills {
     width: 80vw;
+    gap: 0.25rem;
+  }
+  main .first #description #skills div {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.55rem;
   }
   main .second #projects .grid {
-    gap: 1rem;
+    gap: 1.25rem;
+  }
+  main .second #projects .grid .website img {
+    height: 14vh;
   }
   main .second #projects .grid .website .webtitle {
     font-size: 1rem;
   }
-  main .second #projects .grid #nextclient .title {
-    font-size: 1rem;
-    font-weight: 400;
+  main .second #projects .grid #newshome, main .second #projects .grid #previewcard {
+    display: block;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 375px) {
@@ -819,7 +756,8 @@ main .third #for-future-clients #form form #i-4 button {
     width: 80vw;
   }
   main .first #description #skills div {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
   }
   main .second #projects .grid {
     gap: 1rem;
@@ -827,9 +765,12 @@ main .third #for-future-clients #form form #i-4 button {
   main .second #projects .grid .website .webtitle {
     font-size: 1rem;
   }
-  main .second #projects .grid #nextclient .title {
+  main .second #projects .grid #newshome, main .second #projects .grid #previewcard {
+    display: none;
+  }
+  main .third #for-future-clients #form form #i-4 button {
     font-size: 1rem;
-    font-weight: 400;
+    padding: 0.25rem 1.5rem;
   }
 }
 @media only screen and (orientation: portrait) {
@@ -886,14 +827,22 @@ main .third #for-future-clients #form form #i-4 button {
   main .second #projects .grid .website .webtitle span {
     display: none;
   }
-  main .second #projects .grid #nextclient span {
-    display: none;
-  }
   main .third #for-future-clients #form form {
     text-align: left;
+    width: 80vw;
+  }
+  main .third #for-future-clients #form form div {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .third #for-future-clients #form form div label {
+    padding-left: 0.5rem;
   }
   main .third #for-future-clients #form form #i-1 {
     grid-column: 1/span 2;
+  }
+  main .third #for-future-clients #form form #i-1 input {
+    width: 11.5rem;
   }
   main .third #for-future-clients #form form #i-2 {
     grid-row: 2;
