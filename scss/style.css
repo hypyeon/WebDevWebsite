@@ -21,11 +21,15 @@ html {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  scroll-padding: 0;
+  scroll-margin: 0;
 }
 
 body {
   font-family: "Space Mono", monospace;
+  width: 100vw;
 }
 
 main {
@@ -361,11 +365,12 @@ main .third #for-future-clients #form form #i-4 {
 }
 main .third #for-future-clients #form form #i-4 button {
   padding: 0.35rem 1.65rem;
-  background-color: rgb(75, 0, 122);
+  background-color: rgb(99, 0, 160);
   color: rgb(255, 255, 255);
   font-size: 1.25rem;
   letter-spacing: 0.5px;
   border-radius: 0.5rem;
+  border: none;
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1280px) {
@@ -778,23 +783,7 @@ main .third #for-future-clients #form form #i-4 button {
     display: none;
   }
   header #links {
-    right: auto;
-    top: auto;
-    bottom: 3vh;
-    left: 50%;
-    transform: translateX(-50%) translateY(0);
-    z-index: 5;
-    margin: 0;
-  }
-  header #links ul {
-    padding: 0.125rem 0.75rem 0 0.75rem;
-  }
-  header #links ul li {
-    display: inline-block;
-  }
-  header #links ul li img {
-    width: 20px;
-    margin: 0.25rem 0.5rem;
+    display: none;
   }
   main .first #profile {
     flex-direction: column-reverse;
@@ -858,5 +847,20 @@ main .third #for-future-clients #form form #i-4 button {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+  }
+  main .third #for-future-clients #form form #i-4 button {
+    font-size: 0.75rem;
+  }
+  main .third #contact-info {
+    display: flex;
+    justify-content: center;
+  }
+  main .third #contact-info ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .third #contact-info ul img {
+    width: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -244,11 +244,12 @@ main {
                         grid-row: 3;
                         button {
                             padding: .35rem 1.65rem;
-                            background-color: rgb(75, 0, 122);
+                            background-color: rgb(99, 0, 160);
                             color: rgb(255, 255, 255);
                             font-size: 1.25rem;
                             letter-spacing: .5px;
-                            border-radius: .5rem;   
+                            border-radius: .5rem; 
+                            border: none;  
                         }
                     }
                 }
@@ -863,23 +864,7 @@ main {
     }
     header {
         #links {
-            right: auto;
-            top: auto;
-            bottom: 3vh;
-            left: 50%;
-            transform: translateX(-50%) translateY(0);
-            z-index: 5;
-            margin: 0;
-            ul {
-                padding: .125rem .75rem 0 .75rem;
-                li {
-                    display: inline-block;
-                    img {
-                        width: 20px;
-                        margin: .25rem .5rem;
-                    }
-                }
-            }
+            display: none;
         }
     }
     main {
@@ -955,7 +940,22 @@ main {
                             grid-column: 1 / span 2;
                             width: fit-content;
                             margin: 0 auto;
+                            button {
+                                font-size: .75rem;
+                            }
                         }
+                    }
+                }
+            }
+            #contact-info {
+                display: flex;
+                justify-content: center;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    img {
+                        width: 40px;
                     }
                 }
             }
