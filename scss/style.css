@@ -390,6 +390,9 @@ main .third #for-future-clients #form form #i-4 button {
   main .third #for-future-clients #quote #content p {
     font-size: 0.75rem;
   }
+  main .third #for-future-clients .mobile-only {
+    display: none;
+  }
   main .third #for-future-clients #form form {
     width: 42vw;
     text-align: left;
@@ -470,6 +473,9 @@ main .third #for-future-clients #form form #i-4 button {
   }
   main .third #for-future-clients #quote #content p {
     font-size: 0.75rem;
+  }
+  main .third #for-future-clients .mobile-only {
+    display: none;
   }
   main .third #for-future-clients #form form {
     width: 42vw;

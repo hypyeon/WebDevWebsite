@@ -285,6 +285,9 @@ main {
                         }
                     }
                 }
+                .mobile-only {
+                    display: none;
+                }
                 #form {
                     form {
                         width: 42vw;
@@ -394,6 +397,9 @@ main {
                             font-size: .75rem;
                         }
                     }
+                }
+                .mobile-only {
+                    display: none;
                 }
                 #form {
                     form {
