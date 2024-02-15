@@ -61,10 +61,11 @@ main {
         }
         #description {
             .intro {
-                color: rgba(255, 255, 255, 0.8);
+                color: rgba(255, 255, 255, 0.7);
                 font-size: 1.25rem;
                 line-height: 2.25rem;
                 text-align: center;
+                font-family: $thasadith;
             }
             #skills {
                 gap: .5rem;
