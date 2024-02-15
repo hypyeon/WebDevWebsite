@@ -1,4 +1,4 @@
-# Portfolio Website 
+# Portfolio Website 🖥️
 by Hayeong Pyeon
 
 ## Table of Contents
@@ -24,7 +24,7 @@ by Hayeong Pyeon
 3. Open `index.html` in your browser.
 
 ## Link
-*to be updated*
+[Hayeong's Portfoilo Website](https://hypyeon.github.io/WebDevWebsite/)
 
 ## Known Bugs
 - When opened on mobile, part of portfolio container's box shadow flickers. 
